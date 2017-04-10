@@ -93,3 +93,15 @@
     color: #ff7031;
     background: url(/Static/Imgs/h-table-alert.png) no-repeat center/contain;
     font-size: 0.24rem; }
+  .bg .item-con {
+    width: 100%;
+    height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column wrap; }
+    .bg .item-con p {
+      color: #fff;
+      font-size: 0.24rem;
+      line-height: 1.5; }

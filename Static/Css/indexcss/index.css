@@ -193,6 +193,10 @@ body {
   border: 0.01rem dashed #2296F0;
   font-size: 0.16rem;
   border-radius: 0.03rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
   /*padding: 0.1% 0.1%;*/ }
 
 .duty {
@@ -320,7 +324,11 @@ section.picture-show li:nth-of-type(3) {
   font-size: 0.3rem;
   line-height: 0.4rem; }
 
-.present-rg h5 {
+.present-rg span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
   font-size: 0.24rem;
   line-height: 0.4rem; }
 
@@ -625,8 +633,9 @@ nav .inner {
   line-height: 0.4rem; }
 
 .groom .present-rg h5 {
-  font-size: 0.24rem;
-  line-height: 0.4rem; }
+  font-size: 0.2rem;
+  line-height: 0.4rem;
+  }
 
 .groom .present-rg p {
   font-size: 0.26rem;

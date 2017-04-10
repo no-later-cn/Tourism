@@ -14,5 +14,5 @@ require 'Core/DBPDO.php';
 require 'Core/common.php';
 
 \Core\Framework::start();
-//include VIEW.'/personal/zone.html';
+//include VIEW.'personal/zone.html';
 

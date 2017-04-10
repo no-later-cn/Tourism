@@ -12,7 +12,7 @@
   justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 12; }
+  z-index: 12 !important; }
   .nav .calendar, .nav .set {
     width: 0.46rem;
     height: 0.46rem;
@@ -22,13 +22,6 @@
     line-height: 0.46rem;
     color: #fff;
     font-size: 0.24rem; }
-
-#check {
-  display: none; }
-
-#check:checked ~ .bg {
-  display: flex;
-  opacity: 1; }
 
 .banner {
   width: 100%;

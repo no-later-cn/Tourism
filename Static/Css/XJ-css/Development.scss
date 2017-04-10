@@ -1,0 +1,183 @@
+@import "_base";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: #f6f6f6;
+}
+.xj-header {
+    box-sizing: border-box;
+    @include rect(100%,0.88rem);
+    background: url("/Static/Imgs/XJ-img/head.png");
+    background-size: cover;
+    .xj-head {
+        @include rect(100%,100%);
+        padding: 0 0.41rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: url("/Static/Imgs/XJ-img/head.png");
+        background-size: cover;
+        li:nth-child(1) a {
+            display: block;
+            @include rect(0.8rem,0.46rem);
+            color: #6fe498;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+        }
+        li:nth-child(2) {
+            color: #fff;
+            font-size: 0.26rem;
+            p:nth-child(2) {
+                font-family: 'San Francisco','Roboto',sans-serif;
+                font-size: 0.17rem;
+            }
+        }
+        li:nth-child(3) a {
+            display: block;
+            @include rect(0.8rem,0.46rem);
+            background: #fff;
+            color: #6fe498;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+        }
+    }
+}
+.XJ-collent {
+    width: 100%;
+    padding: 0 0.25rem;
+    background: #fff;
+    form {
+        @include rect(100%,1.41rem);
+        textarea {
+            @include rect(100%,100%);
+            resize: none;
+            border: none;
+            outline: none;
+            font-size: 0.24rem;
+            color: #d5d5d5;
+        }
+    }
+}
+.bigbox {
+    @include rect(100%,1.4rem);
+    background: #fff;
+    .photobox {
+        @include rect(4.52rem,100%);
+        display: flex;
+        justify-content: space-between;
+        .firstphoto {
+            @include rect(1.4rem,100%);
+            background: url("/Static/Imgs/XJ-img/backgroundimage2.png");
+            background-size: cover;
+            border-radius: 4px;
+        }
+        .secondphoto {
+            @include rect(1.4rem,100%);
+            background: url("/Static/Imgs/XJ-img/backgroundimage2.png");
+            background-size: cover;
+            border-radius: 4px;
+        }
+        .third {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include rect(1.4rem,100%);
+            background: #f1f1f1;
+            span {
+                display: block;
+                @include rect(1.5rem,0.5rem);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    color: #b2b2b2;
+                    font-size: 0.18rem;
+                }
+            }
+        }
+    }
+}
+.XJ-location {
+    @include rect(100%,0.77rem);
+    border-top: 1px solid #b2b2b2;
+    margin-top: 0.4rem;
+    background: #fff;
+    
+    ul {
+        @include rect(100%,100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .location {
+            @include rect(1.55rem,0.39rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                @include circle(0.39rem);
+                box-shadow: 0 2px 8px 0 #a1a4ab;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon-location {
+                    color: #2f9af4;
+                }
+            }
+        }
+        p:nth-child(2) {
+            color: #b2b2b2;
+            font-size: 0.24rem;
+        }
+        li:nth-child(2) a{
+            display: block;
+            @include rect(0.14rem,0.28rem);
+            background: url("/Static/Imgs/XJ-img/righrbtn.png");
+            background-size: cover;
+        }
+    }
+}
+.Sync {
+    @include rect(100%,0.39rem);
+    padding: 0 0.25rem;
+    display: flex;
+        justify-content: space-between;
+        margin-top: 0.2rem;
+    ul {
+        @include rect(1rem,0.39rem);
+        display: flex;
+        justify-content: space-between;
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include circle(0.39rem);
+            box-shadow: 0 2px 8px 0 #a1a4ab;
+            .icon-QQ {
+                color: #2f9af4;
+            }
+            .icon-WeChat {
+                color: #b2b2b2;
+            }
+        }
+    }
+    span {
+         box-shadow: 0 2px 8px 0 #a1a4ab;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include circle(0.39rem);
+        .icon-clock {
+            color: #b2b2b2;
+        }
+    }
+}

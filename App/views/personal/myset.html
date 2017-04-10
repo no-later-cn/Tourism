@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- 添加 favicon icon -->
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+    <!-- 静止缩放-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>myset.css">
+</head>
+<body>
+    <!--公共头部-->
+    <header>
+        <div class="return icon-return"></div>
+        <div class="text">
+            <h2>个人设置</h2>
+            <span>Personal Setting</span>
+        </div>
+        <div class="share"></div>
+    </header>
+
+    <main>
+        <ul class="main-list">
+            <li class="main-item  circle">
+                <div class="main-con-left">头像</div>
+                <div class="main-con-right">
+                    <div class="main-con-img">
+                        <img src="/Static/Imgs/h-1.jpg" alt="">
+                    </div>
+                    <div class="relate icon-return"></div>
+                </div>
+            </li>
+            <li class="main-item">
+                <div class="main-con-left">个人主页背景</div>
+                <div class="main-con-right">
+                    <div class="main-con-img">
+                        <img src="/Static/Imgs/h-1.jpg" alt="">
+                    </div>
+                    <div class="relate icon-return"></div>
+                </div>
+            </li>
+            <li class="main-item">
+                <div class="main-con-left">昵称</div>
+                <div class="main-con-right">
+                    <p>Lambert</p>
+                </div>
+            </li>
+            <li class="main-item">
+                <div class="main-con-left">性别</div>
+                <div class="main-con-right">
+                    <p>男</p>
+                </div>
+            </li>
+            <li class="main-item">
+                <div class="main-con-left">二维码名片</div>
+                <div class="main-con-right ">
+                    <div class="main-con-img " id="app">
+                        <img src="/Static/Imgs/h-set.png" alt="">
+                    </div>
+                    <div class="relate icon-return"></div>
+                </div>
+            </li>
+        </ul>
+        <ul class="main-list">
+            <li class="main-item  circle">
+                <div class="main-con-left">生日</div>
+                <div class="main-con-right">
+                   <time>1990-01-01</time>
+                </div>
+            </li>
+            <li class="main-item">
+                <div class="main-con-left">地区</div>
+                <div class="main-con-right">
+                    <p>山西 太原</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="main-list" >
+            <li class="main-item  circle">
+                <div class="main-con-left">个性签名</div>
+                <div class="main-con-right">
+                    <p>人生没有如果，只有结果，不辜负自己，好好努力</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

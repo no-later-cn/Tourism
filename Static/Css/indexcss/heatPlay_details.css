@@ -1,0 +1,146 @@
+.inner-width {
+  width: 90%;
+  margin: 0 auto; }
+
+.row::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+body {
+  background: #F6F6F6; }
+
+header {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #fff; }
+
+section.picture-show {
+  width: 100%;
+  height: 3.8rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  position: relative; }
+  section.picture-show ul {
+    height: 3rem;
+    width: 14.1rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -3.2rem; }
+  section.picture-show li {
+    width: 4.5rem;
+    height: 100%;
+    margin-right: 0.2rem;
+    float: left;
+    border-radius: 0.2rem;
+    background-position: center;
+    background-size: 126%;
+    background-repeat: no-repeat; }
+  section.picture-show li:nth-of-type(1) {
+    background-image: url("/Static/Imgs/Venice-1.jpg"); }
+  section.picture-show li:nth-of-type(2) {
+    background-image: url("/Static/Imgs/Venice-2.jpg"); }
+  section.picture-show li:nth-of-type(3) {
+    background-image: url("/Static/Imgs/Venice-3.jpg"); }
+
+section.introduce h3 {
+  color: #333333;
+  line-height: 0.7rem; }
+
+section.introduce h4 {
+  color: #999999;
+  line-height: 0.5rem; }
+
+section.introduce text {
+  color: #929292;
+  line-height: 0.4rem;
+  font-size: 0.3rem;
+  padding-top: 0.1rem; }
+
+section.mass {
+  margin-top: 0.3rem;
+  font-size: 0.35rem;
+  font-weight: bolder;
+  line-height: 0.7rem;
+  color: #333333; }
+  section.mass p.rmb {
+    font-size: 0.5rem; }
+    section.mass p.rmb span:nth-of-type(2) {
+      color: #FC1B35; }
+  section.mass p.date, section.mass p.venue, section.mass p.destination, section.mass p.number {
+    display: flex; }
+    section.mass p.date span, section.mass p.venue span, section.mass p.destination span, section.mass p.number span {
+      flex: 0 0 30%; }
+    section.mass p.date span#date, section.mass p.date span#venue, section.mass p.date span#destination, section.mass p.date span#number, section.mass p.venue span#date, section.mass p.venue span#venue, section.mass p.venue span#destination, section.mass p.venue span#number, section.mass p.destination span#date, section.mass p.destination span#venue, section.mass p.destination span#destination, section.mass p.destination span#number, section.mass p.number span#date, section.mass p.number span#venue, section.mass p.number span#destination, section.mass p.number span#number {
+      flex: 1;
+      display: flex;
+      align-items: center; }
+      section.mass p.date span#date span, section.mass p.date span#venue span, section.mass p.date span#destination span, section.mass p.date span#number span, section.mass p.venue span#date span, section.mass p.venue span#venue span, section.mass p.venue span#destination span, section.mass p.venue span#number span, section.mass p.destination span#date span, section.mass p.destination span#venue span, section.mass p.destination span#destination span, section.mass p.destination span#number span, section.mass p.number span#date span, section.mass p.number span#venue span, section.mass p.number span#destination span, section.mass p.number span#number span {
+        height: 0.4rem;
+        margin-right: 0.2rem;
+        border-radius: 0.2rem;
+        background: #fff;
+        text-align: center;
+        line-height: 0.4rem;
+        font-size: 0.28rem;
+        flex: 0 0 1.02rem;
+        color: #666666; }
+    section.mass p.date span#number span, section.mass p.venue span#number span, section.mass p.destination span#number span, section.mass p.number span#number span {
+      background: transparent;
+      width: 0.2rem;
+      display: flex;
+      line-height: 100%;
+      border: 1px solid #ccc; }
+    section.mass p.date span#number input, section.mass p.venue span#number input, section.mass p.destination span#number input, section.mass p.number span#number input {
+      background: transparent;
+      border: 0;
+      outline: 0;
+      width: 0.55rem;
+      text-align: center;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc; }
+    section.mass p.date span#number input.reduce, section.mass p.date span#number input.increase, section.mass p.venue span#number input.reduce, section.mass p.venue span#number input.increase, section.mass p.destination span#number input.reduce, section.mass p.destination span#number input.increase, section.mass p.number span#number input.reduce, section.mass p.number span#number input.increase {
+      width: 0.3rem;
+      border: 0; }
+
+footer {
+  width: 100%;
+  height: 1.2rem;
+  margin-top: 0.4rem; }
+  footer a {
+    display: block;
+    height: 100%;
+    float: left;
+    text-align: center;
+    color: #fff; }
+    footer a p:nth-of-type(1) {
+      font-size: 0.4rem; }
+    footer a p:nth-of-type(2) {
+      font-size: 0.3rem; }
+  footer a.cart {
+    width: 60%;
+    background: #FF7031;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer a.cart span:nth-of-type(1) {
+      height: 0.52rem;
+      font-size: 0.4rem; }
+    footer a.cart span:nth-of-type(2) {
+      height: 0.52rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0.4rem; }
+  footer a.purchase {
+    width: 40%;
+    background: #FC1B35;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }

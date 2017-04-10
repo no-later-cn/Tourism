@@ -1,0 +1,492 @@
+@import url(base.css);
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+.hint-wifi {
+  z-index: 999 !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hint-wifi .hint-drop {
+    width: 5.42rem;
+    height: 3.88rem;
+    border-radius: 0.2rem;
+    background: #fff; }
+  .hint-wifi .hint-top-back {
+    width: 100%;
+    height: 2.36rem;
+    background: url("/Static/Imgs/login/wifi-1.png") no-repeat top/cover;
+    background-size: 100%; }
+  .hint-wifi .esc {
+    float: right;
+    margin-right: 0.27rem;
+    width: .44rem;
+    height: 0.5rem;
+    background: #fff;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .hint-wifi .esc span {
+      color: #2297f1;
+      font-size: 0.28rem; }
+  .hint-wifi .wifi-title {
+    width: 100%;
+    height: 0.57rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; }
+    .hint-wifi .wifi-title h2 {
+      font-size: 0.27rem; }
+    .hint-wifi .wifi-title span {
+      font-size: 0.18rem;
+      color: #666; }
+  .hint-wifi .division-line {
+    width: 100%;
+    height: .27rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .hint-wifi .division-line .line-drop {
+      width: 2.15rem;
+      height: 0.05rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .hint-wifi .division-line .line-drop .line {
+        width: 0.98rem;
+        height: 0.01rem;
+        background: #999; }
+      .hint-wifi .division-line .line-drop .circle {
+        width: 0.05rem;
+        height: 0.05rem;
+        border-radius: 100%; }
+      .hint-wifi .division-line .line-drop .circle-left {
+        background: #0093e7; }
+      .hint-wifi .division-line .line-drop .circle-right {
+        background: #38d3e1; }
+  .hint-wifi .btn {
+    width: 100%;
+    height: 1.17rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .hint-wifi .btn .btn-drop {
+      width: 4.88rem;
+      height: 0.74rem;
+      display: flex;
+      justify-content: space-between; }
+    .hint-wifi .btn .left-btn, .hint-wifi .btn .right-btn {
+      width: 2.25rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .hint-wifi .btn .left-btn h3, .hint-wifi .btn .right-btn h3 {
+        font-size: 0.2rem;
+        color: #fff; }
+      .hint-wifi .btn .left-btn span, .hint-wifi .btn .right-btn span {
+        padding: .05rem 0 0 0;
+        color: #fff;
+        font-size: 0.12rem;
+        letter-spacing: 0.01rem; }
+    .hint-wifi .btn .left-btn {
+      background: url("/Static/Imgs/login/btn-left.png") no-repeat center/cover; }
+    .hint-wifi .btn .right-btn {
+      background: url("/Static/Imgs/login/btn-right.png") no-repeat center/cover; }
+
+.show {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/Static/Imgs/login/loginbackground.png") no-repeat top/cover; }
+
+.main {
+  width: 6.54rem;
+  height: 7.6rem;
+  background: #fafafa;
+  border-radius: 3%;
+  justify-content: center;
+  position: relative; }
+  .main .logo {
+    position: relative;
+    width: 100%;
+    height: 0.56rem;
+    display: flex;
+    justify-content: center; }
+    .main .logo .backdrop {
+      width: 1.59rem;
+      position: absolute;
+      top: -0.56rem;
+      height: 1.13rem;
+      background: url("/Static/Imgs/login/loginlog.png") no-repeat top center/cover; }
+  .main .future {
+    height: 1.1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main .future span {
+      font-size: 0.37rem;
+      color: #2c9bf1; }
+
+.login-iconic {
+  width: 100%;
+  height: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .login-iconic .login-drop {
+    width: 5rem;
+    height: 0.8rem;
+    background: url("/Static/Imgs/login/login-backdrop.png") no-repeat top center/cover; }
+
+.register-iconic {
+  width: 100%;
+  height: 1.14rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .register-iconic .register-drop {
+    width: 5rem;
+    height: 0.8rem;
+    background: url("/Static/Imgs/login/register-backdrop.png") no-repeat top center/cover; }
+
+.iconic {
+  display: flex;
+  justify-content: center; }
+  .iconic a {
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+  .iconic .context {
+    width: 100%;
+    height: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    .iconic .context h3 {
+      font-size: 0.26rem;
+      color: #fff; }
+    .iconic .context span {
+      font-size: 0.15rem;
+      color: white;
+      font-weight: 200; }
+
+.open-journey {
+  width: 100%;
+  height: 1.17rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .open-journey .submit {
+    width: 2.8rem;
+    height: 0.68rem;
+    background: url("/Static/Imgs/login/open.png") no-repeat center 0/cover;
+    outline: none;
+    cursor: pointer; }
+
+.cut-off {
+  width: 100%;
+  height: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .cut-off .cut-drop {
+    width: 5.76rem;
+    height: 0.05rem;
+    background: url("/Static/Imgs/login/cut-off.png") no-repeat center 0/cover; }
+
+.rest {
+  width: 100%;
+  height: 0.48rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .rest .rest-drop {
+    width: 2.66rem;
+    height: 0.19rem;
+    background: url("/Static/Imgs/login/rest-drop.png") no-repeat center 0/cover;
+    display: flex;
+    justify-content: center; }
+    .rest .rest-drop span {
+      font-size: 0.19rem;
+      color: #999; }
+
+.other {
+  width: 100%;
+  height: 0.22rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .other span {
+    font-size: 0.12rem;
+    color: #999; }
+
+.other-login {
+  width: 100%;
+  height: 1.35rem;
+  display: flex;
+  justify-content: center; }
+  .other-login .other-drop {
+    width: 4.1rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .other-login .other-drop li {
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      border: 0.02rem solid; }
+      .other-login .other-drop li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%; }
+      .other-login .other-drop li:nth-child(1) {
+        border-color: #00A7D1; }
+        .other-login .other-drop li:nth-child(1) span {
+          color: #00A7D1; }
+      .other-login .other-drop li:nth-child(2) {
+        border-color: #83D843; }
+        .other-login .other-drop li:nth-child(2) span {
+          color: #83D843; }
+      .other-login .other-drop li:nth-child(3) {
+        border-color: #F70200; }
+        .other-login .other-drop li:nth-child(3) span {
+          color: #F70200; }
+      .other-login .other-drop li span {
+        font-size: 0.38rem; }
+
+.visitor {
+  width: 100%;
+  height: 0.48rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .visitor span {
+    font-size: 0.19rem; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav .back, .nav .person {
+    width: 0.9rem;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .nav .back a, .nav .person a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0.46rem;
+      height: 0.46rem;
+      border-radius: 100%;
+      background: #2C9BF1 url("/Static/Imgs/login/cir.png") no-repeat center/cover; }
+      .nav .back a span, .nav .person a span {
+        font-size: 0.2rem;
+        color: #fff; }
+
+.back {
+  justify-content: flex-end; }
+
+.person {
+  justify-content: flex-start; }
+
+.account, .password {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .account .error-hint, .password .error-hint {
+    opacity: 0;
+    position: absolute;
+    top: -0.36rem;
+    width: 3.12rem;
+    height: 0.3rem;
+    box-shadow: 0 0.03rem 0.03rem 0 #DADADA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.17rem;
+    background: #fff;
+    transition: transform .8s ease 2s;
+    transform: scale(0); }
+    .account .error-hint span, .password .error-hint span {
+      font-size: 0.17rem;
+      color: #E71F19;
+      font-weight: 200; }
+  .account .drop, .password .drop {
+    width: 5rem;
+    height: 0.8rem;
+    background: #F4F4F4;
+    border-radius: 0.4rem;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    display: flex; }
+    .account .drop .icon, .password .drop .icon {
+      width: 23.6%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .account .drop .icon .icon-login, .password .drop .icon .icon-login {
+        font-size: 0.4rem;
+        color: #2C9BF1; }
+      .account .drop .icon .icon-password-1, .password .drop .icon .icon-password-1 {
+        font-size: 0.4rem;
+        color: #F70200; }
+
+.password {
+  height: 1.14rem;
+  align-items: flex-end; }
+  .password .error-hint {
+    top: -1.17rem; }
+
+.input-box {
+  width: 77.4%;
+  height: 100%; }
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: #999;
+    font-size: 0.22rem; }
+
+.hint {
+  width: 100%;
+  height: 0.4rem;
+  display: flex;
+  justify-content: center; }
+  .hint span {
+    font-size: 0.16rem;
+    color: #999;
+    outline: none;
+    cursor: pointer; }
+  .hint .check {
+    display: flex;
+    justify-content: space-between; }
+  .hint .drop {
+    width: 4.24rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .hint .drop .checked {
+      width: 0.2rem;
+      height: 0.2rem;
+      margin-right: 0.1rem;
+      border-radius: 100%;
+      background: #C2C2C2;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .hint .drop .checked input[type=checkbox]:checked + label {
+        background: #83D843; }
+      .hint .drop .checked label {
+        position: absolute;
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 100%;
+        display: block; }
+
+.hint-check {
+  display: flex; }
+
+.show {
+  flex-direction: column; }
+
+.qq-accredit {
+  width: 5.94rem;
+  height: 6.62rem;
+  background: #fff;
+  border-radius: 3%; }
+  .qq-accredit .qq-drop {
+    width: 100%;
+    height: 5rem;
+    background: url("/Static/Imgs/login/qq-drop.png") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .qq-accredit .qq-logo, .qq-accredit .wechat-logo, .qq-accredit .twitter-logo {
+    width: 1.1rem;
+    height: 1.1rem;
+    box-sizing: border-box;
+    border: 0.02rem solid #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .qq-accredit .qq-logo span, .qq-accredit .wechat-logo span, .qq-accredit .twitter-logo span {
+      font-size: .57rem;
+      color: #fff; }
+  .qq-accredit .hint-message {
+    width: 100%;
+    height: 1.62rem;
+    display: flex;
+    flex-wrap: nowrap; }
+    .qq-accredit .hint-message .fig-header {
+      width: 32%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .qq-accredit .hint-message .fig-header span {
+        width: 1rem;
+        height: 1rem;
+        background: url("/Static/Imgs/login/header.png") no-repeat center/cover; }
+    .qq-accredit .hint-message .fig-content {
+      width: 68%;
+      height: 100%;
+      padding-left: 0.32rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column; }
+      .qq-accredit .hint-message .fig-content h3, .qq-accredit .hint-message .fig-content span {
+        font-size: 0.24rem;
+        color: #8c8c8c; }
+      .qq-accredit .hint-message .fig-content span {
+        margin-top: 0.15rem; }
+
+.open-btn {
+  width: 100%;
+  height: 1.52rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.qq-logo {
+  background: #00a1e9; }
+
+.wechat-logo {
+  background: #83D843; }
+
+.twitter-logo {
+  background: #F70200; }

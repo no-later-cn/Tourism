@@ -1,0 +1,76 @@
+div,p,input{box-sizing:border-box;}
+.head{
+	height: 0.88rem;background: #2E9BF1;padding: 0 0.24rem;
+	overflow: hidden;
+}
+.return{
+	width: 0.6rem;height: 0.6rem;float: left;
+	margin-left: 0.08rem;margin-top: 0.14rem;
+	background: url("/Static/Imgs/zxb/coupon-return.png") no-repeat;
+	background-size: contain;
+}
+.head h3{
+	width: 1.55rem;height: 0.6rem;margin: 0.14rem auto;
+	font-size: 0.3rem;text-align: center;color: #FFF;
+}
+.head h3>span{
+	font-size: 0.23rem;
+}
+.con{
+	height: 12.06rem;background: #F6F6F6;padding: 0 0.6rem;
+}
+.coupon{
+	width: 100%;height: 2.63rem;float: left;background: #FFF;
+	border-radius: 5px;margin-top: 0.12rem;
+}
+.warp{
+	width: 100%;height: 1.83rem;float: left;
+	border-bottom: 0.07rem dotted #EEE;padding-left: 0.46rem;
+	padding-top: 0.4rem;
+}
+.warp .left{
+	width: 1.7rem;height: 100%;float: left;
+}
+.warp .left .ljq{
+	width: 0.8rem;height: 0.4rem;float: left;margin-top: 0.14rem;
+	background: url("/Static/Imgs/zxb/ljq.png") no-repeat;
+	background-size: contain;
+}
+.warp .left p{
+	width: 1.2rem;height: 0.36rem;float: left;
+	font-size: 0.48rem;color: #FB1B38;
+}
+.warp .left span{font-size: 0.22rem;margin-left: 0.03rem;}
+.warp .right{
+	width: 4.14rem;height: 100%;float: left;
+}
+.warp .right h2{
+	width: 2.6rem;height: 0.26rem;float: left;line-height: 0.26rem;
+	font-size: 0.28rem;color: #363636;
+}
+.warp .right p{
+	width: 3rem;height: 0.55rem;float: left;margin-top: 0.12rem;
+	font-size: 0.22rem;color: #999;line-height: 0.36rem;
+}
+.warp .right .down{
+	width: 0.6rem;height: 0.6rem;float: right;margin-right: 0.35rem;
+	margin-top: -0.1rem;
+	background: url("/Static/Imgs/zxb/coupon-down.png") no-repeat;
+	background-size: contain;
+}
+.btn{
+	width: 100%;height: 0.73rem;float: left;text-align: center;
+	line-height: 0.73rem;color: #2797F0;position: relative;
+}
+.btn .left{
+	width: 0.23rem;height: 0.24rem;border-radius: 50%;
+	background: #F6F6F6;position: absolute;top: -0.14rem;left: -0.12rem;
+}
+.btn .right{
+	width: 0.23rem;height: 0.24rem;border-radius: 50%;
+	background: #F6F6F6;position: absolute;top: -0.14rem;right: -0.12rem;
+}
+
+
+
+

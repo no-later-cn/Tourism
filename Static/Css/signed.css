@@ -1,0 +1,95 @@
+.bg .title > .time, .bg .title .alert, .bg .home thead > tr > td, .bg .home tbody > tr > td {
+  color: #333333; }
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease; }
+  .bg .conent {
+    width: 6.1rem;
+    height: 6.03rem;
+    background: url(/Static/Imgs/h-signed.png) center/cover no-repeat;
+    box-sizing: border-box;
+    padding: 0 0.39rem; }
+  .bg .title {
+    width: 100%;
+    height: 0.24rem;
+    margin-top: 0.65rem;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: space-between; }
+    .bg .title > .time, .bg .title .alert {
+      width: auto;
+      height: 100%;
+      font-size: 0.24rem;
+      display: flex; }
+    .bg .title .btn-border {
+      width: 0.36rem;
+      height: 0.22rem;
+      margin-left: 0.22rem;
+      border: 1px solid #5f5551;
+      border-radius: 50px; }
+      .bg .title .btn-border .bin {
+        width: 0.24rem;
+        height: 0.24rem;
+        border: 1px solid #464646;
+        border-radius: 50%;
+        background: #2296f0;
+        transition: all 0.5s linear;
+        margin-top: -2px; }
+    .bg .title .bin-on {
+      background: #fff; }
+      .bg .title .bin-on .bin-r {
+        transform: translate(-35%, 0); }
+    .bg .title .bin-off {
+      background: #2296f0; }
+      .bg .title .bin-off .bin-r {
+        background: #fff;
+        transform: translate(80%, 0); }
+  .bg .home {
+    width: 5.3rem;
+    height: 3.78rem; }
+  .bg .home table {
+    width: 100%;
+    height: auto; }
+  .bg .home thead > tr {
+    width: 100%;
+    height: 0.65rem;
+    font-size: 0.24rem; }
+  .bg .home thead > tr > td {
+    width: 0.4rem;
+    height: 100%;
+    text-align: center;
+    line-height: 0.65rem; }
+  .bg .home #tbody {
+    width: 100%;
+    height: 3.14rem; }
+  .bg .home tbody > tr {
+    width: 100%;
+    height: 0.35rem;
+    font-size: 0.24rem; }
+  .bg .home tbody > tr > td {
+    width: 0.4rem;
+    height: 100%;
+    text-align: center;
+    line-height: 2; }
+  .bg .color {
+    background: url(/Static/Imgs/h-table.png) no-repeat center/contain;
+    font-size: 0.24rem; }
+    .bg .color p {
+      color: transparent; }
+  .bg .not-signed {
+    color: #03A9F4;
+    font-size: 30px; }
+  .bg .los {
+    color: #ff7031;
+    background: url(/Static/Imgs/h-table-alert.png) no-repeat center/contain;
+    font-size: 0.24rem; }

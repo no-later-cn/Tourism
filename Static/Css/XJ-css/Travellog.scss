@@ -1,0 +1,192 @@
+@import "_base";
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.xj-header{
+  box-sizing:border-box;
+  @include rect(100%,0.88rem);
+  background:url(/Static/Imgs/XJ-img/head.png);
+  background-size: cover;
+  .xj-head{
+    @include rect(100%,100%);
+    padding: 0 0.41rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:url(/Static/Imgs/XJ-img/head.png);
+    background-size: cover;
+    li:nth-child(1) a{
+      display: block;
+      @include rect(0.45rem,0.44rem);
+      background:url(/Static/Imgs/XJ-img/back.png);
+      background-size: cover;
+    }
+    li:nth-child(2) {
+      color:#fff;
+      font-size: 0.26rem;
+      p:nth-child(2){
+        font-family: 'San Francisco','Roboto',sans-serif;
+        font-size: 0.17rem;
+      }
+    }
+    li:nth-child(3) a{
+      display: block;
+      @include rect(0.45rem,0.44rem);
+      background:url(/Static/Imgs/XJ-img/append.png);
+      background-size: cover;
+    }
+  }
+}
+//内容
+.content-box{
+  @include rect(100%,10.75rem);
+  margin-top: 0.28rem;
+}
+.XJ-content{
+  @include rect(100%,100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.25rem;
+  .content{
+    @include rect(100%,2.6rem);
+    background: #ffffff;
+    box-shadow:0 2px 14px 0 #a1a4ab;
+    .Top-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      @include rect(100%,1.92rem);
+      padding: 0 0.19rem;
+      position: relative;
+      .one-img{
+        @include rect(2.4rem,1.7rem);
+        background: #53D9F0;
+        border-radius: 3px;
+      }
+      .character{
+        @include rect(4.07rem,1.62rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        h3{
+          font-size: 0.24rem;
+          color:#666666;
+          margin-top: 0.08rem;
+        }
+        h4{
+          font-size: 0.2rem;
+          color:#b6b6b6;
+        }
+      }
+    }
+    .Down-content{
+      margin-top: 0.1rem;
+      display: flex;
+      justify-content: space-between;
+      @include rect(100%,0.5rem);
+
+      padding: 0 0.19rem;
+      .Left-content{
+        @include rect(1.6rem,100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .Avatar a{
+          display: block;
+          @include rect(0.5rem,0.5rem);
+          background: #9a88c1;
+          border-radius: 50%;
+          border:1px solid #77bef6;
+        }
+        .username{
+          font-size: 0.18rem;
+           font-family: 'San Francisco','Roboto',sans-serif;
+          color:#666666;
+        }
+      }
+      .Right-content{
+        display: flex;
+        justify-content: space-between;
+        @include rect(2.6rem,100%);
+        li p:nth-child(2){
+          font-size:0.18rem;
+          color:#a7a7a7;
+        }
+        .love{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 0.8rem;
+          height:100%;
+          .icon-praise{
+            color:red;
+            font-size: 0.18rem;
+          }
+          
+        }
+        .collect{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 0.8rem;
+          height:100%;
+          .icon-collect{
+              color: #feb764;
+            font-size: 0.18rem;
+          }
+        }
+        .leave{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 0.8rem;
+          height:100%;
+          .icon-socket{
+              font-size:0.18rem;
+              color:#93cffd;
+          }
+        }
+      }
+
+    }
+  }
+}
+//脚部
+.XJ-foot{
+  @include rect(100%,0.98rem);
+  .foot{
+    @include rect(100%,100%);
+    display: flex;
+    justify-content: space-between;
+    li {
+      @include rect(25%,100%);
+      background: #282b2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a{
+        display: block;
+        @include circle(0.76rem);
+        background: #16181e;
+        border: 2px solid #2f333d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+          @include circle(0.58rem);
+          background: #fff;
+        }
+      }
+    }
+
+  }
+}

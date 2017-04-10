@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- 添加 favicon icon -->
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+    <!-- 静止缩放-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+</head>
+<body>
+<link rel="stylesheet" href="<?php echo CSS_PATH?>signed.css">
+<div class="bg">
+    <div class="conent">
+            <div class="title">
+                <div class="time">2017-4-6</div>
+                <div class="alert">
+                    <p>签到提醒</p>
+                    <div class="btn-border bin-on">
+                        <div class="bin bin-r"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="home">
+                <table  cellspacing="1" cellpadding="1" >
+                    <thead id="thead">
+                    <tr>
+                        <td>日</td>
+                        <td>一</td>
+                        <td>二</td>
+                        <td>三</td>
+                        <td>四</td>
+                        <td>五</td>
+                        <td>六</td>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="<?php echo JS_PATH?>jquery.min.js"></script>
+    <script src="<?php echo JS_PATH?>signed.js"></script>
+</body>
+</html>
+</html>

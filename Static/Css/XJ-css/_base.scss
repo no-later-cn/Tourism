@@ -1,0 +1,68 @@
+//正方形
+@mixin cube($size){
+    width: $size;
+    height: $size;
+}
+//长方形
+@mixin rect($width,$height){
+  width: $width;
+  height:$height;
+}
+//圆
+@mixin circle($size){
+   @include cube($size);
+    border-radius:50%;
+}
+//颜色
+@mixin bg(){
+    $r:floor(random()*256);
+    $g:floor(random()*256);
+    $b:floor(random()*256);
+    $a:floor(random()*3+6)/10;
+    $color :rgba($r,$g,$b,$a);
+    background: $color;
+   
+}
+//左右居中
+@mixin lr(){
+  position: absolute;
+  left:0;
+  right:0;
+  margin:auto;
+}
+//居中
+@mixin center(){
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+//上下居中
+@mixin tb(){
+  position: absolute;
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+//栅格化
+//@for $index from 1 through 12{
+// 
+//  .col-#{$index}{
+//      float: left;
+//      width: percentage($index/12);
+//  }
+//}
+//@for $index from 1 through 12{
+//  .col-md-#{$index}{
+//      float: left;
+//      width: percentage($index/12);
+//  }
+//}
+//伪元素清除浮动
+.row::after{
+    content: "";
+    display: block;
+    clear:both;
+}

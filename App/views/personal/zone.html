@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- 添加 favicon icon -->
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+    <!-- 静止缩放-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>zone.css">
+</head>
+<body>
+<?php include 'zone-heading.html'?>
+    <!--中间内容-->
+    <main>
+        <div class="main-con">
+            <ul class="main-list">
+                <li class="main-item">
+                    <a href="/personal/myfriend">
+                        <div class="main-item-left">
+                            <div class="main-item-img friend icon-friend"></div>
+                            <div class="main-item-info">
+                                <h3>我的好友</h3>
+                                <p>MY COLLECTION</p>
+                            </div>
+                        </div>
+                        <div class="main-item-right">
+                            <div class="bubble"></div>
+                            <div class="relate icon-return"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-item">
+                    <a href="">
+                        <div class="main-item-left">
+                            <div class="main-item-img syslog icon-syslog"></div>
+                            <div class="main-item-info">
+                                <h3>我的日志</h3>
+                                <p>MY DIARY</p>
+                            </div>
+                        </div>
+                        <div class="main-item-right">
+                            <div class="bubble"></div>
+                            <div class="relate icon-return"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-item">
+                    <a href="">
+                        <div class="main-item-left">
+                            <div class="main-item-img card icon-card"></div>
+                            <div class="main-item-info">
+                                <h3>我的订单</h3>
+                                <p>MY ORDER</p>
+                            </div>
+                        </div>
+                        <div class="main-item-right">
+                            <div class="bubble"></div>
+                            <div class="relate icon-return"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-item">
+                    <a href="">
+                        <div class="main-item-left">
+                            <div class="main-item-img coupon icon-coupon"></div>
+                            <div class="main-item-info">
+                                <h3>我的优惠券</h3>
+                                <p>MY COUPON</p>
+                            </div>
+                        </div>
+                        <div class="main-item-right">
+                            <div class="bubble">
+                                <span>3</span>
+                            </div>
+                            <div class="relate icon-return"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="main-item">
+                    <a href="">
+                        <div class="main-item-left">
+                            <div class="main-item-img clock icon-clock"></div>
+                            <div class="main-item-info">
+                                <h3>浏览历史</h3>
+                                <p>BROWSE RECORD</p>
+                            </div>
+                        </div>
+                        <div class="main-item-right">
+                            <div class="bubble"></div>
+                            <div class="relate icon-return"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+<?php include VIEW.'template/footer.html'?>
+
+</body>
+</html>

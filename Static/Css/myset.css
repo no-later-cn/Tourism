@@ -1,0 +1,93 @@
+@charset "UTF-8";
+header .return, header .text {
+  color: #fff; }
+
+body {
+  background: #f6f6f6; }
+
+header {
+  width: 100%;
+  height: 1.1rem;
+  background: url("/Static/Imgs/cart_header.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0.42rem; }
+
+header .return {
+  background: url("/Static/Imgs/cir.png") no-repeat center;
+  background-size: 90%;
+  width: 0.44rem;
+  height: 0.44rem;
+  text-align: center;
+  line-height: .45rem;
+  font-size: 0.2rem; }
+
+header .share {
+  width: 0.44rem;
+  height: 0.44rem; }
+
+header .text {
+  flex: 1;
+  text-align: center; }
+  header .text h2 {
+    font-size: 0.26rem; }
+  header .text span {
+    font-size: 0.2rem;
+    font-family: 'San Francisco', 'Roboto', sans-serif; }
+
+main {
+  width: 100%;
+  height: calc(100% - 1.5rem); }
+  main ul {
+    width: 100%;
+    height: auto;
+    margin-top: 0.24rem;
+    background: #fff; }
+    main ul li {
+      width: 100%;
+      height: 0.86rem;
+      border-top: 1px solid #cacaca;
+      border-bottom: 1px solid #cacaca;
+      border-collapse: collapse;
+      clear: both;
+      margin-bottom: -1px;
+      box-sizing: border-box;
+      padding: 0 0.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      main ul li .main-con-left {
+        width: 50%;
+        height: 0.27rem;
+        font-size: 0.28rem; }
+      main ul li .main-con-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        main ul li .main-con-right .main-con-img {
+          box-sizing: border-box;
+          width: 0.75rem;
+          height: 0.65rem;
+          overflow: hidden; }
+          main ul li .main-con-right .main-con-img img {
+            width: 100%;
+            height: 100%;
+            display: block; }
+        main ul li .main-con-right .relate {
+          transform: rotate(180deg);
+          width: 0.3rem;
+          height: 100%;
+          font-size: 0.19rem;
+          text-align: left; }
+      main ul li p {
+        font-size: 0.26rem;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+    main ul .circle .main-con-img {
+      border-radius: 50%; }
+    main ul #app {
+      width: 0.4rem;
+      height: 0.4rem; }

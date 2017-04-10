@@ -1,0 +1,184 @@
+.row::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  background: #f6f6f6; }
+
+.xj-header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.88rem;
+  background: url("/Static/Imgs/XJ-img/head.png");
+  background-size: cover; }
+  .xj-header .xj-head {
+    width: 100%;
+    height: 100%;
+    padding: 0 0.41rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("/Static/Imgs/XJ-img/head.png");
+    background-size: cover; }
+    .xj-header .xj-head li:nth-child(1) a {
+      display: block;
+      width: 0.8rem;
+      height: 0.46rem;
+      color: #6fe498;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px; }
+    .xj-header .xj-head li:nth-child(2) {
+      color: #fff;
+      font-size: 0.26rem; }
+      .xj-header .xj-head li:nth-child(2) p:nth-child(2) {
+        font-family: 'San Francisco','Roboto',sans-serif;
+        font-size: 0.17rem; }
+    .xj-header .xj-head li:nth-child(3) a {
+      display: block;
+      width: 0.8rem;
+      height: 0.46rem;
+      background: #fff;
+      color: #6fe498;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px; }
+
+.XJ-collent {
+  width: 100%;
+  padding: 0 0.25rem;
+  background: #fff; }
+  .XJ-collent form {
+    width: 100%;
+    height: 1.41rem; }
+    .XJ-collent form textarea {
+      width: 100%;
+      height: 100%;
+      resize: none;
+      border: none;
+      outline: none;
+      font-size: 0.24rem;
+      color: #d5d5d5; }
+
+.bigbox {
+  width: 100%;
+  height: 1.4rem;
+  background: #fff; }
+  .bigbox .photobox {
+    width: 4.52rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .bigbox .photobox .firstphoto {
+      width: 1.4rem;
+      height: 100%;
+      background: url("/Static/Imgs/XJ-img/backgroundimage2.png");
+      background-size: cover;
+      border-radius: 4px; }
+    .bigbox .photobox .secondphoto {
+      width: 1.4rem;
+      height: 100%;
+      background: url("/Static/Imgs/XJ-img/backgroundimage2.png");
+      background-size: cover;
+      border-radius: 4px; }
+    .bigbox .photobox .third {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.4rem;
+      height: 100%;
+      background: #f1f1f1; }
+      .bigbox .photobox .third span {
+        display: block;
+        width: 1.5rem;
+        height: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .bigbox .photobox .third span p {
+          color: #b2b2b2;
+          font-size: 0.18rem; }
+
+.XJ-location {
+  width: 100%;
+  height: 0.77rem;
+  border-top: 1px solid #b2b2b2;
+  margin-top: 0.4rem;
+  background: #fff; }
+  .XJ-location ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .XJ-location ul .location {
+      width: 1.55rem;
+      height: 0.39rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .XJ-location ul .location span {
+        width: 0.39rem;
+        height: 0.39rem;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px 0 #a1a4ab;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .XJ-location ul .location span .icon-location {
+          color: #2f9af4; }
+    .XJ-location ul p:nth-child(2) {
+      color: #b2b2b2;
+      font-size: 0.24rem; }
+    .XJ-location ul li:nth-child(2) a {
+      display: block;
+      width: 0.14rem;
+      height: 0.28rem;
+      background: url("/Static/Imgs/XJ-img/righrbtn.png");
+      background-size: cover; }
+
+.Sync {
+  width: 100%;
+  height: 0.39rem;
+  padding: 0 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem; }
+  .Sync ul {
+    width: 1rem;
+    height: 0.39rem;
+    display: flex;
+    justify-content: space-between; }
+    .Sync ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0.39rem;
+      height: 0.39rem;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px 0 #a1a4ab; }
+      .Sync ul li .icon-QQ {
+        color: #2f9af4; }
+      .Sync ul li .icon-WeChat {
+        color: #b2b2b2; }
+  .Sync span {
+    box-shadow: 0 2px 8px 0 #a1a4ab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.39rem;
+    height: 0.39rem;
+    border-radius: 50%; }
+    .Sync span .icon-clock {
+      color: #b2b2b2; }

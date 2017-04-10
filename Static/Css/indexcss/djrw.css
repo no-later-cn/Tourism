@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  height: 0.88rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+  .header .return {
+    flex-basis: 0.46rem;
+    height: 0.46rem;
+    background: url("/Static/Imgs/cir.png") center/center no-repeat;
+    font-size: 0.5rem; }
+
+section.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: url("/Static/Imgs/djrw_bg.jpg") center/cover no-repeat; }
+  section.container a.purchase {
+    width: 45%;
+    height: 0.85rem;
+    border-radius: 0.4rem;
+    background: #FC1B35;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 1.06rem;
+    box-shadow: 0 0.05rem 0.05rem 0.01rem #D83049;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff; }
+    section.container a.purchase .dot {
+      width: 0.16rem;
+      height: 0.16rem;
+      border-radius: 50%;
+      background: #fff; }

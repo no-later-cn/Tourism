@@ -1,0 +1,47 @@
+<?php include 'header.html'?>
+
+<div class="show">
+    <div class="nav">
+        <div class="back"><a href="" class=""><span class="icon-return"></span></a></div>
+        <div class="person"><a href="" class=""><span class="icon-register"></span></a></div>
+    </div>
+    <div class="main">
+        <div class="logo">
+            <div class="backdrop"></div>
+        </div>
+        <div class="future"><span>心程</span></div>
+        <div class="login-iconic iconic">
+            <div class="login-drop drop">
+                <a href="/login/login"><div class="context"><h3>登陆</h3><span>SIGN IN</span></div></a>
+            </div>
+        </div>
+        <div class="register-iconic iconic">
+            <div class="register-drop drop">
+                <a href=""> <div class="context"><h3>注册</h3><span>REGISTER</span></div></a>
+            </div>
+        </div>
+    <div class="visitor"><a href=""><span>游客试用</span></a></div>
+<style>
+    .nav{ display: none }
+    .open-journey{display: none}
+    .cut-off{height:0.88rem}
+</style>
+        <div class="cut-off">
+            <div class="cut-drop"></div>
+        </div>
+        <div class="rest">
+            <div class="rest-drop">
+                <span>其他登陆方式</span>
+            </div>
+        </div>
+        <div class="other"><span>OTHER LOGIN MODE</span></div>
+        <div class="other-login">
+            <ul class="other-drop">
+                <li><a href="<?php echo 'login/qq'?>"><span class="icon-QQ"></span></a></li>
+                <li><a href="<?php echo 'login/wechat'?>"><span class="icon-WeChat"></span></a></li>
+                <li><a href="<?php echo 'login/twitter'?>"><span class="icon-twitter"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<?php include 'footer.html';?>

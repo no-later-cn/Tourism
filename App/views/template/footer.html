@@ -1,26 +1,26 @@
 <!--底部-->
 <footer>
     <ul class="footer-list">
-        <li class="footer-item">
-            <a href="">
+        <li class="footer-item <?php echo $method==='index'?'active':''; ?>">
+            <a href="/index">
                 <div class="footer-icon"></div>
             </a>
         </li>
-        <li class="footer-item">
-            <a href="">
+        <li class="footer-item <?php echo $method==='car'?'active':''; ?>">
+            <a href="/car">
                 <div class="footer-icon"></div>
             </a>
         </li>
-        <li class="footer-item news">
+        <li class="footer-item news <?php echo $method==='logdetails'?'active':''; ?>">
 
-            <a href="">
+            <a href="/index/logdetails">
                 <div class="footer-icon">
                     <div class="news">3</div>
                 </div>
             </a>
         </li>
-        <li class="footer-item active">
-            <a href="">
+        <li class="footer-item <?php echo $method==='personal'?'active':''; ?>">
+            <a href="/personal">
                 <div class="footer-icon"></div>
             </a>
         </li>

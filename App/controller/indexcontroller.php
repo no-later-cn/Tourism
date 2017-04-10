@@ -1,22 +1,26 @@
 <?php
 namespace App\controller;
-
-
 use Core\Framework;
-
-class indexController extends Framework
-{
-
-
-    public function __construct()
-    {
-        session_start();
-        if (!isset($_SESSION['login'])) {
-            $this->redirect('/login');
-        }
-    }
+class indexController extends Framework{
     public function index(){
-        $this->display('index/index.html');
-
+        $this->assign("method","index");
+        $this->display("index/index.html");
     }
+    public function heatPlay(){
+        $this->display("index/heatPlay.html");
+    }
+    public function heatPlay_details(){
+        $this->display("index/heatPlay_details.html");
+    }
+    public function heatSpots(){
+        $this->display("index/heatSpots.html");
+    }
+    public function logdetails(){
+        $this->assign("method","index");
+        $this->display("index/logdetails.html");
+    }
+    public function travel(){
+        $this->display("index/travel.html");
+    }
+
 }

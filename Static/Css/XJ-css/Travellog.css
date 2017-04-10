@@ -84,7 +84,7 @@
         align-items: center;
         position: absolute;
         right: 0; }
-        .XJ-content .content .Top-content .character h3 {
+        .XJ-content .content .Top-content .character h3 a{
           font-size: 0.24rem;
           color: #666666;
           margin-top: 0.08rem; }

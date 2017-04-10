@@ -1,0 +1,102 @@
+@import url(signed.css);
+.banner .banner-con .name a, .banner .banner-con .info > a {
+  color: #fff; }
+
+.nav {
+  width: 100%;
+  height: 0.46rem;
+  box-sizing: border-box;
+  padding: 0 0.42rem;
+  display: flex;
+  margin-top: 2px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 12; }
+  .nav .calendar, .nav .set {
+    width: 0.46rem;
+    height: 0.46rem;
+    background: #f02987 url(/Static/Imgs/cir.png) no-repeat center/0.46rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.46rem;
+    color: #fff;
+    font-size: 0.24rem; }
+
+#check {
+  display: none; }
+
+#check:checked ~ .bg {
+  display: flex;
+  opacity: 1; }
+
+.banner {
+  width: 100%;
+  height: 3.64rem;
+  display: flex;
+  align-items: flex-end; }
+  .banner .background {
+    width: 100%;
+    height: 4.73rem;
+    background: #2297f1;
+    border-radius: 0 0 15% 15%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    overflow: hidden; }
+    .banner .background img {
+      width: 100%;
+      height: 100%; }
+  .banner .banner-con {
+    width: 100%;
+    height: 3.18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap column;
+    padding: 0 0.24rem;
+    box-sizing: border-box;
+    line-height: 1.5; }
+    .banner .banner-con .avatar {
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      border: 0.05rem solid  #fff;
+      position: relative;
+      margin-bottom: 0.06rem; }
+      .banner .banner-con .avatar a {
+        width: 100%;
+        height: 100%;
+        display: block; }
+        .banner .banner-con .avatar a img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          display: block; }
+    .banner .banner-con .quality {
+      width: auto;
+      height: 0.2rem;
+      font-size: 0.2rem; }
+    .banner .banner-con .name a {
+      font-size: 0.28rem;
+      font-weight: bold; }
+    .banner .banner-con .info > a {
+      font-size: 0.2rem; }
+    .banner .banner-con .quality ul {
+      display: flex; }
+      .banner .banner-con .quality ul li {
+        width: 0.18rem;
+        height: 0.18rem;
+        background: url(/Static/Imgs/h-xing.png) center/cover no-repeat; }
+    .banner .banner-con .avatar .set-img {
+      width: 0.34rem;
+      height: 0.34rem;
+      position: absolute;
+      background: #2297f1;
+      right: 0;
+      bottom: 0;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 0.14rem;
+      text-align: center;
+      line-height: 0.34rem; }

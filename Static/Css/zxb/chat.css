@@ -7,7 +7,8 @@ div,p,input{box-sizing:border-box;}
     width: 0.6rem;
     height: 0.6rem;
     float: left;
-    background: url("/Static/Imgs/zxb/chat-return.png");
+    background: url(/Static/Imgs/zxb
+/chat-return.png);
     background-size: contain; }
 .head h3{
   width: 2.4rem;height: 0.2rem;margin: 0.2rem auto;
@@ -16,7 +17,8 @@ div,p,input{box-sizing:border-box;}
 }
 .head .more{
   width: 0.6rem;height: 0.6rem;display: block;
-  background: url("/Static/Imgs/zxb/chat-more.png");
+  background: url(/Static/Imgs/zxb
+/chat-more.png);
   background-size: contain;float: right;
 }
 .chat_box{
@@ -32,69 +34,173 @@ div,p,input{box-sizing:border-box;}
   width: 0.85rem;height: 0.82rem;
 }
 .chat_box>li:first-child .header{
-  background: url("/Static/Imgs/zxb/head1.png");float: left;
+  background: url(/Static/Imgs/zxb
+/head1.png);float: left;
   background-size: contain;margin-right: 0.2rem;
 }
 .chat_box>li:first-child .con{
   width: 2.2rem;height: 0.9rem;float: left;border-radius: 5px;
   border-top-left-radius: 0px;margin-top: 0.15rem;
-  background: url("/Static/Imgs/zxb/talk1.png");
-  background-size: contain;
+  background: #3CD3E1;padding: 0 0.23rem;
+}
+.chat_box>li:first-child .con .time{
+  width: 100%;height: 0.41rem;border-bottom: 2px dotted #DDD;
+  float: left;line-height: 0.41rem;
+  color: #FFF;
+}
+.chat_box>li:first-child .con .icon{
+  width: 0.16rem;height: 0.18rem;float: left;margin-top: 0.12rem;
+  background: url(/Static/Imgs/zxb
+/chat-time.png) no-repeat;
+  background-size: cover;
+}
+.chat_box>li:first-child span{
+  font-size: 0.14rem;float: left;margin-left: 0.07rem;
+}
+.chat_box>li:first-child em{
+  font-size: 0.12rem;float: left;margin-left: 0.07rem;
+}
+.chat_box>li:first-child .warp{
+  width: 100%;height: 0.46rem;float: left;font-size: 0.24rem;
+  line-height: 0.44rem;color: #FFF;
 }
 .chat_box>li:nth-child(2) .header{
-  background: url("/Static/Imgs/zxb/head2.png");float: right;
+  background: url(/Static/Imgs/zxb
+/head2.png);float: right;
   background-size: contain;margin-left: 0.2rem;
 }
 .chat_box>li:nth-child(2) .con{
   width: 1.94rem;height: 0.9rem;float: right;border-radius: 5px;
   border-top-right-radius: 0px;margin-top: 0.15rem;
-  background: url("/Static/Imgs/zxb/talk2.png");
-  background-size: contain;
+  background: #2396F0;padding: 0 0.23rem;
 }
-.chat_box>li:nth-child(2) .wait{
-  width: 0.4rem;height: 0.4rem;float: right;
-  background: url("/Static/Imgs/zxb/wait.png");background-size: contain;
-  margin-top: 0.45rem;margin-right: 0.18rem;
+.chat_box>li:nth-child(2) .con .time{
+  width: 100%;height: 0.41rem;border-bottom: 2px dotted #DDD;
+  float: left;line-height: 0.41rem;
+  color: #FFF;
+}
+.chat_box>li:nth-child(2) em{
+  font-size: 0.12rem;float: right;margin-left: 0.07rem;
+}
+.chat_box>li:nth-child(2) span{
+  font-size: 0.14rem;float: right;margin-left: 0.07rem;
+}
+.chat_box>li:nth-child(2) .con .icon{
+  width: 0.16rem;height: 0.18rem;float: right;margin-top: 0.12rem;
+  background: url(/Static/Imgs/zxb
+/chat-time.png) no-repeat;
+  background-size: cover;
+}
+.chat_box>li:nth-child(2) .warp{
+  width: 100%;height: 0.46rem;float: left;font-size: 0.24rem;
+  line-height: 0.44rem;color: #FFF;
 }
 .chat_box>li:nth-child(3) .header{
-  background: url("/Static/Imgs/zxb/head1.png");float: left;
+  background: url(/Static/Imgs/zxb
+/head1.png);float: left;
   background-size: contain;margin-right: 0.2rem;
 }
 .chat_box>li:nth-child(3) .con{
   width: 1.52rem;height: 1.44rem;float: left;border-radius: 5px;
   border-top-left-radius: 0px;margin-top: 0.15rem;
-  background: url("/Static/Imgs/zxb/talk3.jpg");
+  background: url(/Static/Imgs/zxb
+/talk3.jpg);
   background-size: contain;margin-top: -0.15rem;
 }
 .chat_box>li:nth-child(4) .header{
-  background: url("/Static/Imgs/zxb/head2.png");float: right;
+  background: url(/Static/Imgs/zxb
+/head2.png);float: right;
   background-size: contain;margin-left: 0.2rem;
 }
 .chat_box>li:nth-child(4) .con{
   width: 2.4rem;height: 1.5rem;float: right;border-radius: 5px;
   border-top-right-radius: 0px;margin-top: 0.15rem;
-  background: url("/Static/Imgs/zxb/talk4.png");
-  background-size: contain;
+  background: url(/Static/Imgs/zxb
+/talk4.png);
+  background-size: cover;
+}
+.chat_box>li:nth-child(4) .wait{
+  width: 0.4rem;height: 0.4rem;float: right;
+  background: url(/Static/Imgs/zxb
+/wait.png);background-size: cover;
+  margin-top: 0.7rem;margin-right: 0.18rem;
 }
 .chat_box>li:nth-child(5) .header{
-  background: url("/Static/Imgs/zxb/head2.png");float: right;
+  background: url(/Static/Imgs/zxb
+/head2.png);float: right;
   background-size: contain;margin-left: 0.2rem;
 }
 .chat_box>li:nth-child(5) .con{
-  width: 2.8rem;height: 0.9rem;float: right;border-radius: 5px;
+  width: 2.4rem;height: 0.9rem;float: right;border-radius: 5px;
   border-top-right-radius: 0px;margin-top: 0.15rem;
-  background: url("/Static/Imgs/zxb/talk5.png");
-  background-size: contain;
+  background: #2396F0;padding: 0 0.23rem;
+}
+.chat_box>li:nth-child(5) .con .time{
+  width: 100%;height: 0.41rem;border-bottom: 2px dotted #DDD;
+  float: left;line-height: 0.41rem;
+  color: #FFF;
+}
+.chat_box>li:nth-child(5) em{
+  font-size: 0.12rem;float: right;margin-left: 0.07rem;
+}
+.chat_box>li:nth-child(5) span{
+  font-size: 0.14rem;float: right;margin-left: 0.07rem;
+}
+.chat_box>li:nth-child(5) .con .icon{
+  width: 0.16rem;height: 0.18rem;float: right;margin-top: 0.12rem;
+  background: url(/Static/Imgs/zxb
+/chat-time.png) no-repeat;
+  background-size: cover;
+}
+.chat_box>li:nth-child(5) .warp{
+  width: 100%;height: 0.46rem;float: left;font-size: 0.24rem;
+  line-height: 0.44rem;color: #FFF;
+}
+.chat_box>li:nth-child(5) .fail{
+  width: 0.36rem;height: 0.36rem;float: right;margin-right: 0.14rem;
+  margin-top: 0.43rem;background: url(/Static/Imgs/zxb
+/fail.png);
+  background-size: cover;
 }
 .chat_box>li:nth-child(6) .header{
-  background: url("/Static/Imgs/zxb/head1.png");float: left;
+  background: url(/Static/Imgs/zxb
+/head1.png);float: left;
   background-size: contain;margin-right: 0.2rem;
 }
 .chat_box>li:nth-child(6) .con{
   width: 2.26rem;height: 0.9rem;float: left;border-radius: 5px;
   border-top-left-radius: 0px;margin-top: 0.15rem;
-  background: url("/Static/Imgs/zxb/talk6.png");
-  background-size: contain;
+  background: #3CD3E1;padding: 0 0.23rem;
+}
+.chat_box>li:nth-child(6) .con .time{
+  width: 100%;height: 0.41rem;border-bottom: 2px dotted #DDD;
+  float: left;line-height: 0.41rem;
+  color: #FFF;
+}
+.chat_box>li:nth-child(6) .con .icon{
+  width: 0.16rem;height: 0.18rem;float: left;margin-top: 0.12rem;
+  background: url(/Static/Imgs/zxb
+/chat-time.png) no-repeat;
+  background-size: cover;
+}
+.chat_box>li:nth-child(6) .time span{
+  font-size: 0.14rem;float: left;margin-left: 0.07rem;
+}
+.chat_box>li:nth-child(6) em{
+  font-size: 0.12rem;float: left;margin-left: 0.07rem;
+}
+.chat_box>li:nth-child(6) .warp{
+  width: 100%;height: 0.46rem;float: left;font-size: 0.24rem;
+  line-height: 0.44rem;color: #FFF;
+}
+.chat_box>li:nth-child(6) .voice_prompt{
+  width: 1.12rem;height: 0.26rem;float: left;
+  background: url(/Static/Imgs/zxb
+/voice_prompt.png);
+  background-size: cover;margin-top: 0.08rem;
+}
+.chat_box>li:nth-child(6) .warp span{
+  float: right;
 }
 .input_box{
   height: 0.98rem;background: #272B2C;
@@ -102,7 +208,8 @@ div,p,input{box-sizing:border-box;}
 .input_box .switch-icon{
   width: 0.55rem;height: 0.55rem;float: left;margin-top: 0.23rem;
   margin-left: 0.16rem;
-  background: url("/Static/Imgs/zxb/switch-icon.png");
+  background: url(/Static/Imgs/zxb
+/switch-icon.png);
   background-size: contain;
 }
 .input_box>input{
@@ -113,13 +220,15 @@ div,p,input{box-sizing:border-box;}
 .input_box .voice{
   width: 0.55rem;height: 0.55rem;float: left;margin-top: 0.23rem;
   margin-left: 0.16rem;
-  background: url("/Static/Imgs/zxb/voice-icon.png");
+  background: url(/Static/Imgs/zxb
+/voice-icon.png);
   background-size: contain;
 }
 .input_box .add{
   width: 0.55rem;height: 0.55rem;float: left;margin-top: 0.23rem;
   margin-left: 0.16rem;
-  background: url("/Static/Imgs/zxb/add-icon.png");
+  background: url(/Static/Imgs/zxb
+/add-icon.png);
   background-size: contain;
 }
 

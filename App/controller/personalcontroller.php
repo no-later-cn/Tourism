@@ -5,6 +5,7 @@ use Core\Framework;
 
 class personalController extends Framework {
     public function index(){
+        $this->assign("method","personal");
         $this->display('personal/zone.html');
     }
     public function myfriend(){

@@ -22,10 +22,10 @@ class Framework
                 $con = new $class_file();
                 $con->$m();
             }else{
-                include VIEW.'404.html';
+                include VIEW.'template/404.html';
             }
         }else{
-            include VIEW.'404.html';
+            include VIEW.'template/404.html';
         }
     }
 //    display   分装include 函数，如果有数据要导入页面，就将数据展开传出

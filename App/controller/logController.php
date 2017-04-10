@@ -16,6 +16,7 @@ class logController extends Framework{
     }
     //旅行日志
     public function Travellog(){
+        $this->assign("method","logdetails");
         $this->display('log/Travellog.html');
     }
     //日志详情

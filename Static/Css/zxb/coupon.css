@@ -6,7 +6,8 @@ div,p,input{box-sizing:border-box;}
 .return{
 	width: 0.6rem;height: 0.6rem;float: left;
 	margin-left: 0.08rem;margin-top: 0.14rem;
-	background: url("/Static/Imgs/zxb/coupon-return.png") no-repeat;
+	background: url(/Static/Imgs/zxb
+/coupon-return.png) no-repeat;
 	background-size: contain;
 }
 .head h3{
@@ -33,7 +34,8 @@ div,p,input{box-sizing:border-box;}
 }
 .warp .left .ljq{
 	width: 0.8rem;height: 0.4rem;float: left;margin-top: 0.14rem;
-	background: url("/Static/Imgs/zxb/ljq.png") no-repeat;
+	background: url(/Static/Imgs/zxb
+/ljq.png) no-repeat;
 	background-size: contain;
 }
 .warp .left p{
@@ -55,7 +57,8 @@ div,p,input{box-sizing:border-box;}
 .warp .right .down{
 	width: 0.6rem;height: 0.6rem;float: right;margin-right: 0.35rem;
 	margin-top: -0.1rem;
-	background: url("/Static/Imgs/zxb/coupon-down.png") no-repeat;
+	background: url(/Static/Imgs/zxb
+/coupon-down.png) no-repeat;
 	background-size: contain;
 }
 .btn{

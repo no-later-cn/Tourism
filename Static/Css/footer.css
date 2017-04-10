@@ -3,7 +3,7 @@ footer {
   height: 0.98rem;
   display: flex;
   background: #282b2c;
-  z-index:999;
+  z-index:999999;
   position: fixed;
   left: 0;
   bottom: 0; }

@@ -1,14 +1,10 @@
+
 @charset "UTF-8";
 .row::after {
   content: "";
   display: block;
   clear: both; }
 
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  box-sizing: border-box; }
 
 .xj-header {
   box-sizing: border-box;

@@ -26,4 +26,9 @@ class logController extends Framework{
     public function publish(){
         $this->display('log/Development.html');
     }
+  // 最新动态
+    public function Personaljournal(){
+        $this->display('log/Personaljournal.html');
+    }
+
 }

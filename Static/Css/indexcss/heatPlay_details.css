@@ -43,11 +43,11 @@ section.picture-show {
     background-size: 126%;
     background-repeat: no-repeat; }
   section.picture-show li:nth-of-type(1) {
-    background-image: url("/Static/Imgs/Venice-1.jpg"); }
+    background-image: url("/Static/Imgs/indeximgs/Venice-1.jpg"); }
   section.picture-show li:nth-of-type(2) {
-    background-image: url("/Static/Imgs/Venice-2.jpg"); }
+    background-image: url("/Static/Imgs/indeximgs/Venice-2.jpg"); }
   section.picture-show li:nth-of-type(3) {
-    background-image: url("/Static/Imgs/Venice-3.jpg"); }
+    background-image: url("/Static/Imgs/indeximgs/Venice-3.jpg"); }
 
 section.introduce h3 {
   color: #333333;
@@ -101,7 +101,7 @@ section.mass {
       background: transparent;
       border: 0;
       outline: 0;
-      width: 0.55rem;
+      width: 0.45rem;
       text-align: center;
       border-left: 1px solid #ccc;
       border-right: 1px solid #ccc; }
@@ -130,10 +130,10 @@ footer {
     justify-content: center;
     align-items: center; }
     footer a.cart span:nth-of-type(1) {
-      height: 0.52rem;
-      font-size: 0.4rem; }
+      height: 0.7rem;
+      font-size: 0.7rem; }
     footer a.cart span:nth-of-type(2) {
-      height: 0.52rem;
+      height: 0.7rem;
       display: flex;
       flex-direction: column;
       justify-content: center;

@@ -1,0 +1,32 @@
+@import "base.css";
+$img-path:'/Static/Imgs/';
+body{
+  position: fixed;
+  width:100%;
+  height:100%;
+
+}
+.show{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background: url($img-path +'loginbackground.png')no-repeat top/cover;
+}
+.main{
+  width:87.2%;
+  height:7.6rem;
+  background: #fafafa;
+  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .logo{
+    position: absolute;
+    top:-0.56rem;
+    width:1.59rem;
+    height:1.13rem;
+    background: url($img-path +'loginlog.png')no-repeat top center/cover;
+  }
+}

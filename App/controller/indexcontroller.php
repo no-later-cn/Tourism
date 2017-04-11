@@ -13,6 +13,10 @@ class indexController extends Framework{
         $this->display("index/heatPlay_details.html");
     }
     public function heatSpots(){
+        $this->assign("method","index");
+        $this->assign("header_t","热门景点");
+        $this->assign("icon_l",true);
+        $this->assign("header_d","HOT SPOTS");
         $this->display("index/heatSpots.html");
     }
     public function logdetails(){

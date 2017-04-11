@@ -13,12 +13,11 @@ header {
   header .return {
     background: url("/Static/Imgs/cir.png") no-repeat center;
     background-size: 90%;
-    width: .6rem;
-    height: .6rem;
     margin-left: .15rem;
     text-align: center;
     padding-right: .07rem;
     line-height: .6rem;
+    font-size: .4rem;
     color: #fff; }
   header .text {
     color: #fff;

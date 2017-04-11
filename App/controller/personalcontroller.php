@@ -14,4 +14,11 @@ class personalController extends Framework {
     public function myset(){
         $this->display('/personal/myset.html');
     }
+    public function setting(){
+        $this->display('/personal/setting.html');
+
+    }
+    public function coupon(){
+        $this->display('/personal/coupon.html');
+    }
 }

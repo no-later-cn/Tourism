@@ -500,7 +500,9 @@ nav .inner {
 
 .contion h3 {
   font-size: 0.3rem; }
-
+.contion span{
+  font-size: 0.26rem;
+}
 .chengshi {
   width: 100%;
   display: flex;
@@ -532,6 +534,9 @@ nav .inner {
 .contion1 h3 {
   font-size: 0.3rem; }
 
+.contion1 span{
+  font-size: 0.26rem;
+}
 .chengshi1 {
   width: 100%;
   display: flex;
@@ -581,7 +586,9 @@ nav .inner {
 
 .contion2 h3 {
   font-size: 0.3rem; }
-
+.contion2 span{
+  font-size: 0.26rem;
+}
 .groom {
   margin-top: 0.8rem;
   width: 100%;
@@ -772,3 +779,109 @@ nav .inner {
 
 .britain .last span i {
   color: #2296F0; }
+
+/*Searchthree*/
+.fail-nav {
+  margin-top: 0.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+
+}
+
+.fail-con{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+}
+.fail-con img {
+  width: 1.27rem;
+  height: 1.27rem;
+  padding-left: 0.8rem; 
+}
+.fail-con .relevant{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:start;
+  /*flex-wrap: wrap;*/
+  width: 70%;
+  height: 1.27rem;
+  font-size: 0.3rem;
+  padding-left: 0.2rem;
+}
+.fail-con .relevant .yingwen{
+  font-size: 0.12rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.guess{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+}
+.guess .inner ul{
+  margin-top: 0.3rem;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+}
+.guess .inner ul li{
+  width: 30%;
+  height: 3rem;
+  font-size: 100% 3rem;
+  background: url(/Static/Imgs/indeximgs/diceng.png)center/contain no-repeat;
+  position: relative;
+}
+.guess-top{
+  margin-top: 0.1rem;
+  width: 100%;
+  height: 2.8rem;
+  background: #fff;
+  border-radius: 0.1rem;
+  overflow: hidden;
+  position: relative;
+}
+.guess .inner ul li img{
+  width: 100%;
+  height: 60%;  
+  position: relative;
+}
+.guess .inner ul li .shadow{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  left: 0;
+  top:37%;
+  background: rgba(0,0,0,0.5);  
+  display:flex;
+  justify-content:center;
+
+}
+.guess .inner ul li .shadow li{
+  width: 10%;
+  height: 100%;
+  font-size: 100% 0.17rem;
+  background: url(/Static/Imgs/indeximgs/star.png)center/contain no-repeat;
+}
+.guess-bottom{
+  width: 100%;
+  height: 39%;
+  background: #fff;
+  border-radius: 0.1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0.1rem;
+  text-align: center;
+  line-height: 0.6rem;
+}
+.guess-bottom b{
+  font-weight: 600;
+}
+.guess-bottom p{
+  display: inline-block;
+  border-top: 0.01rem dotted #dfdfdf;
+  font-size: 0.26rem;
+}

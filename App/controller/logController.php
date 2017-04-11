@@ -19,6 +19,11 @@ class logController extends Framework{
         $this->assign("method","logdetails");
         $this->display('log/Travellog.html');
     }
+    //我的日志
+    public function my(){
+        $this->assign("method","logdetails");
+        $this->display('log/me.html');
+    }
     //日志详情
     public  function  Logdetails(){
         $this->display('log/Logdetails.html');

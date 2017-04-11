@@ -74,8 +74,7 @@
      }
      .first_img{
           @include rect(100%,3.48rem);
-          background:url(/Static/Imgs/XJ-img/hotel.png);
-      background-size: cover;
+
      }
      .second{
          margin-top: 0.15rem;
@@ -85,9 +84,7 @@
          line-height:0.33rem;
      }
      .second_img{
-          margin-top: 0.15rem;
-          @include rect(100%,1.72rem);
-          background:url(/Static/Imgs/XJ-img/hotel.png);
-      background-size: cover;
+       @include rect(100%,3.48rem);
+
      }
 }

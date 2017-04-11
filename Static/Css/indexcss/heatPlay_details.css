@@ -110,6 +110,7 @@ section.mass {
       border: 0; }
 
 footer {
+  box-sizing:border-box;
   width: 100%;
   height: 1.2rem;
   margin-top: 0.4rem; }
@@ -124,6 +125,7 @@ footer {
     footer a p:nth-of-type(2) {
       font-size: 0.3rem; }
   footer a.cart {
+    padding:0;
     width: 60%;
     background: #FF7031;
     display: flex;

@@ -7,15 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/Static/Css/base.css">
-    <link rel="stylesheet" href="/Static/Css/indexcss/djrw.css">
+    <link rel="stylesheet" href="/Static/Css/indexcss/heatPlay.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="return icon-return"></a>
-        <h3>当季热玩</h3>
-        <a href="" class="share icon-share"></a>
+    <header>
+        <a href="<?php echo $url;?>" class="<?php echo isset($icon_l)?'return icon-return':'';?>" style="width:.6rem;height: .6rem"></a>
+        <div class="text">
+            <h2><?php echo $header_t?></h2>
+            <span><?php echo $header_d?></span>
+        </div>
+        <div class="<?php echo isset($icon_r)?'icon-share':''?>" style="width:.6rem;height: .6rem">
+        </div>
     </header>
     <section class="container">
+        <div class="main">
+            <a href="/index/heatPlay_details?sign=heatPlay" class="show-pic"></a>
+            <a href="/index/heatPlay_details?sign=heatPlay" class="show-pic"></a>
+            <div class="description">
+                <span class="title"><h4>威尼斯</h4><ul class="star-level"><li></li><li></li><li></li></ul></span>
+                <h4>Beauty of Venice</h4>
+                <text>提前半年开始利用闲暇之余做攻略，各种网站各种查，同事问身边去过的人，但是身边去过的人全是跟团，反应一般。</text>
+            </div>
+            <div class="operation">
+                <div class="item"><a href="#" class="icon-xin"></a><span>1230</span></div>
+                <div class="item"><a href="#" class="icon-xing"></a><span>1230</span></div>
+                <div class="item"><a href="#" class="icon-news"></a><span>1230</span></div>
+            </div>
+        </div>
         <a href="#" class="purchase">
             <div class="dot"></div>
             <h2>立即购买</h2>

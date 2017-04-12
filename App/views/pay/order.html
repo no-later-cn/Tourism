@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/Static/Css/base.css">
     <link rel="stylesheet" href="/Static/Css/pay.css">
@@ -13,7 +13,7 @@
 <body>
     <!--订单的头部  和别的有差别！-->
     <header class="order">
-        <div class="return icon-return"></div>
+        <div class="return icon-return" onclick=" window.history.back()";></div>
         <div class="text">
             <h2>订单详情</h2>
             <span>ORDER DETALLS</span>
@@ -109,7 +109,7 @@
         </div>
     </div>
     <div class="settle-btn">
-        <a href="pay/pay">
+        <a href="/index.php/pay/pay">
             <i class="icon-settle"></i>
             <div class="clearing">
                 <p>去结算</p>

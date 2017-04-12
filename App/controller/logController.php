@@ -36,5 +36,9 @@ class logController extends Framework{
     public function Personaljournal(){
         $this->display('log/Personaljournal.html');
     }
+    public function mylog(){
+        $this->display('log/me.html');
+
+    }
 
 }

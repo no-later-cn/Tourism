@@ -34,10 +34,10 @@ body {
     text-align: center;
     font-size: 0; }
     .order .text h2 {
-      font-size: .36rem;
+      font-size: .26rem;
       line-height: .4rem; }
     .order .text span {
-      font-size: .3rem;
+      font-size: .17rem;
       line-height: .32rem;
       font-family: 'San Francisco', 'Roboto', sans-serif; }
     .order .text .load {
@@ -124,10 +124,10 @@ body {
       flex-direction: column;
       justify-content: space-between; }
       .goods-content li .goods-text h3 {
-        font-size: .32rem;
-        font-weight: 700; }
-      .goods-content li .goods-text p {
         font-size: .26rem;
+        font-weight: 600; }
+      .goods-content li .goods-text p {
+        font-size: .24rem;
         color: #7B7B7B;
         white-space: nowrap; }
     .goods-content li .price-box {
@@ -139,7 +139,7 @@ body {
       color: #FC1B35;
       font-weight: bold;
       line-height: .6rem;
-      font-size: .45rem; }
+      font-size: .4rem; }
       .goods-content li .price-box .star i {
         display: inline-block;
         width: .3rem;
@@ -175,31 +175,31 @@ body {
     text-align: center; }
     .money .defray i {
       color: #0E1FB1;
-      font-size: .6rem; }
+      font-size: .5rem; }
     .money .defray .amount {
       display: inline-block;
       text-align: left;
       margin-left: 0.15rem; }
       .money .defray .amount h6 {
-        font-size: .32rem;
-        line-height: .6rem; }
+        font-size: .3rem;
+        line-height: .5rem; }
       .money .defray .amount span {
         display: block;
-        font-size: .24rem; }
+        font-size: .2rem; }
   .money .coin .coin-wrap {
     display: table-cell;
     vertical-align: bottom;
     margin-top: .5rem; }
   .money .coin span {
     color: #666;
-    font-size: .5rem; }
+    font-size: .4rem; }
   .money .coin span:nth-of-type(2) {
     color: #FC1B35;
-    font-size: .55rem; }
+    font-size: .45rem; }
   .money .coin span:nth-of-type(3) {
     font-size: .2rem; }
   .money .voucher i {
-    font-size: .55rem;
+    font-size: .45rem;
     color: #FC1B35; }
   .money .voucher span {
     font-size: .3rem;
@@ -234,8 +234,7 @@ body {
       flex-direction: column;
       justify-content: center; }
       .settle-btn a .clearing p {
-        font-weight: 500;
-        font-size: .3rem;
+        font-size: .26rem;
         line-height: .4rem;
         letter-spacing: .03rem; }
       .settle-btn a .clearing span {
@@ -261,8 +260,7 @@ body {
     margin: 0 .12rem;
     position: relative; }
   .payment li .payment-text h6 {
-    font-size: .36rem;
-    font-weight: 600;
+    font-size: .3rem;
     display: flex;
     align-items: center; }
     .payment li .payment-text h6 i:nth-of-type(1) {
@@ -278,7 +276,8 @@ body {
     .payment li .payment-text h6 i:nth-of-type(2) {
       color: #F25353; }
   .payment li .payment-text p {
-    font-size: .3rem;
+    font-size: .26rem;
+    color: #666;
     line-height: .5rem; }
   .payment li:nth-of-type(2) .p-icon i {
     background: #0093E7; }

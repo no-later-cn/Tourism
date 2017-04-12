@@ -6,13 +6,13 @@ class Framework
 //    start： 启动获取url中的数组项目，按照数组进行对象实例化，调用处理方法
     public static function start(){
         $url = explode('/',explode("?",$_SERVER["REQUEST_URI"])[0]);
-        if(empty($url[1])){
-            $c='indexController';
+        if(empty($url[2])){
+            $c='indexcontroller';
         }else{
 
-            $c=$url[1].'Controller';
+            $c=$url[2].'controller';
         }
-        $m = isset($url[2]) ? $url[2] :"index";
+        $m = isset($url[3]) ? $url[3] :"index";
         $file = CONTROLLER.$c.'.php';
         if(file_exists($file)){
             require $file;
@@ -22,9 +22,12 @@ class Framework
                 $con = new $class_file();
                 $con->$m();
             }else{
+                echo $file;
                 include VIEW.'template/404.html';
             }
         }else{
+
+            echo $file;
             include VIEW.'template/404.html';
         }
     }
@@ -42,7 +45,7 @@ class Framework
     }
 //    redirect   变更请求头
     function redirect($url){
-        header("Location:".$url);
+        header("Location:/index.php".$url);
     }
 //    session   设置session
     function session($k,$v){

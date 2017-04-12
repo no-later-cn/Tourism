@@ -21,4 +21,7 @@ class personalController extends Framework {
     public function coupon(){
         $this->display('/personal/coupon.html');
     }
+    public function chat(){
+         $this->display('/personal/chat-add.html');
+    }
 }

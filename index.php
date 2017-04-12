@@ -13,6 +13,6 @@ require 'Core/Framework.php';
 require 'Core/DBPDO.php';
 require 'Core/common.php';
 
-\Core\Framework::start();
-//include VIEW.'personal/zone.html';
+//\Core\Framework::start();
+include VIEW.'pay/back.html';
 

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+.order {
+  width: 100%;
+  height: 1.86rem;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 0.48rem;
+  color: #fff;
+  font-size: 0.44rem;
+  align-items: flex-start;
+  background: url("/Static/Imgs/cart_header.png") no-repeat center/cover; }
+
+.order .return {
+  background: url(/Static/Imgs/XJ-img/back.png);
+  background-size: cover;
+  width: .44rem;
+  height: .44rem; }
+
+.order .text {
+  text-align: center;
+  font-size: 0; }
+
+.order .text h2 {
+  font-size: .26rem;
+  line-height: .4rem; }
+
+.order .text span {
+  font-size: .17rem;
+  line-height: .32rem;
+  font-family: 'San Francisco', 'Roboto', sans-serif; }
+
+.order .text .load {
+  width: 1.2rem;
+  height: .1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.order .text .load i {
+  border-radius: 50%;
+  display: inline-block; }
+
+.order .text .load i:nth-of-type(1), .order .text .load i:nth-of-type(5) {
+  background: #4DCA8F;
+  width: .05rem;
+  height: .05rem; }
+
+.order .text .load i:nth-of-type(2), .order .text .load i:nth-of-type(4) {
+  background: #63F2AA;
+  width: .08rem;
+  height: .08rem; }
+
+.order .text .load i:nth-of-type(3) {
+  width: .1rem;
+  height: .1rem;
+  background: #FCD125; }
+
+.order .add {
+  background: url(/Static/Imgs/XJ-img/append.png);
+  background-size: cover;
+  width: .44rem;
+  height: .44rem; }

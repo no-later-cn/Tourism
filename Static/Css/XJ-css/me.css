@@ -70,6 +70,7 @@ body, html {
   .diary li:nth-child(1) {
     font-size: 0.3rem; }
   .diary li:nth-child(2) {
+    line-height: 0.4rem;
     font-size: 0.26rem; }
 
 .touxiang {
@@ -298,6 +299,25 @@ body, html {
     margin-top: 0.1rem;
     color: #666666;
     font-size: 0.18rem; }
+  .scon .more a {
+    width: 0.98rem;
+    height: 0.35rem;
+    background: #fe8800;
+    border-radius: 0.36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -0.8rem;
+    right: 0.6rem; }
+    .scon .more a p:nth-child(2) {
+      font-size: 0.22rem;
+      color: #fff; }
+    .scon .more a .xdian {
+      width: 4px;
+      height: 4px;
+      background: #f1da18;
+      border-radius: 50%; }
 
 .fourdian {
   width: 3.47rem;
@@ -367,6 +387,25 @@ body, html {
     margin-top: 0.1rem;
     color: #666666;
     font-size: 0.18rem; }
+  .fcon .more a {
+    width: 0.98rem;
+    height: 0.35rem;
+    background: #2296f0;
+    border-radius: 0.36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -0.8rem;
+    right: 0.6rem; }
+    .fcon .more a p:nth-child(2) {
+      font-size: 0.22rem;
+      color: #fff; }
+    .fcon .more a .xdian {
+      width: 4px;
+      height: 4px;
+      background: #38d3e1;
+      border-radius: 50%; }
 
 .fivedian {
   width: 3.47rem;
@@ -436,3 +475,23 @@ body, html {
     margin-top: 0.1rem;
     color: #666666;
     font-size: 0.18rem; }
+  .ficon .more a {
+    display: block;
+    width: 0.98rem;
+    height: 0.35rem;
+    background: #ff1ac6;
+    border-radius: 0.36rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -0.8rem;
+    right: 0.6rem; }
+    .ficon .more a p:nth-child(2) {
+      font-size: 0.22rem;
+      color: #fff; }
+    .ficon .more a .xdian {
+      width: 4px;
+      height: 4px;
+      background: #f02987;
+      border-radius: 50%; }

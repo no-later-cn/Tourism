@@ -43,11 +43,11 @@ section.picture-show {
     background-size: 126%;
     background-repeat: no-repeat; }
   section.picture-show li:nth-of-type(1) {
-    background-image: url("/Static/Imgs/indeximgs/Venice-1.jpg"); }
+    background-image: url("/Static/Imgs/indeximgs/heatPlay-details-1.png"); }
   section.picture-show li:nth-of-type(2) {
-    background-image: url("/Static/Imgs/indeximgs/Venice-2.jpg"); }
+    background-image: url("/Static/Imgs/indeximgs/heatPlay-details-2.png"); }
   section.picture-show li:nth-of-type(3) {
-    background-image: url("/Static/Imgs/indeximgs/Venice-3.jpg"); }
+    background-image: url("/Static/Imgs/indeximgs/heatPlay-details-3.png"); }
 
 section.introduce h3 {
   color: #333333;

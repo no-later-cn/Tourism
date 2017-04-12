@@ -43,8 +43,19 @@
         border-radius: 0.2rem;
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;
-        background-image: url("/Static/Imgs/indeximgs/travel.jpg"); }
+        background-repeat: no-repeat;}
+        .container .item .main a.show-pic:nth-of-type(1){
+          background-image: url("/Static/Imgs/indeximgs/travel-strategy-1.png");
+        }
+        .container .item .main a.show-pic:nth-of-type(2){
+          background-image: url("/Static/Imgs/indeximgs/travel-strategy-2.png");
+        }
+        .container .item .main a.show-pic:nth-of-type(3){
+          background-image: url("/Static/Imgs/indeximgs/travel-strategy-3.png");
+        }
+        .container .item .main a.show-pic:nth-of-type(4){
+          background-image: url("/Static/Imgs/indeximgs/travel-strategy-4.png");
+        }
       .container .item .main .description {
         box-sizing: border-box;
         width: 100%;
@@ -67,13 +78,14 @@
         line-height: 0.3rem;
         color: #666666; }
       .container .item .main text {
-        line-height: 0.28rem;
+        line-height: 0.36rem;
         font-size: 0.28rem;
         color: #999;
         letter-spacing: -2px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
-        overflow: hidden;
-        text-overflow: ellipsis; }
+        overflow: hidden;}
       .container .item .main .heat {
         width: 100%;
         height: 13%;
@@ -94,16 +106,16 @@
         border-radius: 50%; }
       .container .item .main .header-items:nth-of-type(1) {
         left: 0;
-        background-image: url("/Static/Imgs/indeximgs/header-1.jpg"); }
+        background-image: url("/Static/Imgs/indeximgs/visitor1.png"); }
       .container .item .main .header-items:nth-of-type(2) {
         left: 0.2rem;
-        background-image: url("/Static/Imgs/indeximgs/header-2.jpg"); }
+        background-image: url("/Static/Imgs/indeximgs/visitor2.png"); }
       .container .item .main .header-items:nth-of-type(3) {
         left: 0.4rem;
-        background-image: url("/Static/Imgs/indeximgs/header-3.jpg"); }
+        background-image: url("/Static/Imgs/indeximgs/visitor3.png"); }
       .container .item .main .header-items:nth-of-type(4) {
         left: 0.6rem;
-        background-image: url("/Static/Imgs/indeximgs/header-4.jpg"); }
+        background-image: url("/Static/Imgs/indeximgs/visitor4.png"); }
       .container .item .main .heat-num {
         width: 1.7rem;
         height: 0.5rem;

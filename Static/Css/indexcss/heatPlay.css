@@ -120,7 +120,7 @@ header .icon-share {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("/Static/Imgs/indeximgs/djrw_bg.jpg") center/cover no-repeat; }
+  background: url("/Static/Imgs/indeximgs/heatPlay-bg.png") center/cover no-repeat; }
 
 .main {
   width: 60%;
@@ -148,24 +148,75 @@ header .icon-share {
     background-size: auto;
     box-shadow: 0.05rem 0 0.2rem #333; }
   .main .show-pic:nth-of-type(1) {
-    background-image: url("/Static/Imgs/indeximgs/heatPlay-1.jpg"); }
+    background-image: url("/Static/Imgs/indeximgs/heatPlay-1.png"); }
   .main .show-pic:nth-of-type(2) {
-    background-image: url("/Static/Imgs/indeximgs/heatPlay-2.jpg");
+    background-image: url("/Static/Imgs/indeximgs/heatPlay-2.png");
     transform: rotateZ(20deg) translateY(-0.3rem); }
   .main .description {
+    width:80%;height:1.56rem;
+    padding-top:0.14rem;
     position: absolute;
+    overflow:hidden;
     top: 65%;
-    left: 0;
-    font-size: 0.28rem; }
+    left: 10%;}
+  .main .description .title{
+    width:100%;height:0.4rem;
+  }
+  .main .description .title h3{
+    width:1.6rem;
+    float:left;
+    color:#333333;
+    line-height:0.4rem;
+  }
+  .main .description .title  .star-level{
+    width:2rem;height:0.4rem;
+    float:left;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+  }
+  .main .description .english-title{
+    line-height:0.3rem;
+    color:#666666;
+  }
+  .main .description text{
+    font-size:0.26rem;
+    line-height:0.3rem;
+    color:#999999;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
   .main .operation {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    top: 90%;
-    left: 0;
+    top: 91%;
+    left: 10%;
+    margin:auto;
+    width:80%;height:0.52rem;
     font-size: 0.28rem; }
-
+  .main .operation .item{
+    flex:1;line-height:0.34rem;
+    font-size:0.26rem;
+    color:#999999;
+    display:flex;
+    align-items:center;
+  }
+  .main .operation .item .icon-praise{
+    font-size:0.3rem;
+    color:#FF4F4A;
+  }
+  .main .operation .item .icon-collect{
+    font-size:0.37rem;
+    color:#FEB764;
+  }
+  .main .operation .item .icon-news{
+    font-size:0.34rem;
+    color:#93CFFD;
+  }
 section.container a.purchase {
   width: 45%;
   height: 0.85rem;

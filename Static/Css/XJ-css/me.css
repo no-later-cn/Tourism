@@ -6,17 +6,21 @@
 body {
   box-sizing: border-box; }
 
+body, html {
+  width: 100%;
+  height: 100%; }
+
 .bigbox {
   box-sizing: border-box;
   width: 100%;
-  height: 100vh;
+  height: 120%;
   background: url(/Static/Imgs/XJ-img/backgroundimg.png);
   background-size: cover; }
 
 .XJ-box {
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: 120%;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0; }
@@ -101,20 +105,29 @@ body {
       border: 1px solid #fff;
       position: absolute;
       top: 0.3rem;
-      z-index: 99999; }
+      z-index: 99999;
+      left: 0;
+      right: 0;
+      margin: auto; }
     .touxiang .xiaoq li:nth-child(2) {
       width: 1rem;
       height: 0.78rem;
       background: url("/Static/Imgs/XJ-img/jian_03.png");
       background-size: cover;
       position: absolute;
-      top: 2rem; }
+      top: 2rem;
+      left: 0;
+      right: 0;
+      margin: auto; }
     .touxiang .xiaoq li:nth-child(3) {
       position: absolute;
       top: 0.5rem;
+      left: 0;
+      right: 0;
       width: 1px;
-      height: 85vh;
-      background: #38d3e1; }
+      height: 100vh;
+      background: #38d3e1;
+      margin: auto; }
 
 .firstdian {
   width: 3.47rem;
@@ -239,38 +252,57 @@ body {
       border-radius: 50%;
       background: #fff; }
 
-.time {
+.timebox {
   width: 3.11rem;
+  height: 0.42rem;
+  background: #f1da18;
+  margin: 0 auto;
+  border-radius: 0px 0.2rem 0.2rem 0.2rem; }
+
+.stime {
+  width: 2.6rem;
+  height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; }
-  .time li:nth-child(1) {
-    color: #30aebb;
+  justify-content: space-between;
+  align-items: center; }
+  .stime li:nth-child(1) {
+    color: #fff;
     font-size: 0.18rem; }
-  .time li:nth-child(2) {
+  .stime li:nth-child(2) {
     color: #fff;
     font-size: 0.2rem; }
-  .time li:nth-child(3) {
+  .stime li:nth-child(3) {
     color: #fff;
     font-size: 0.24rem; }
 
-.con {
+.conbox {
   width: 3.11rem;
-  margin: 0 auto; }
-  .con li:nth-child(1) {
-    color: #fff;
+  height: 1.95rem;
+  margin: 0 auto;
+  background: url("/Static/Imgs/XJ-img/my_03.png");
+  background-size: cover;
+  box-sizing: border-box; }
+
+.scon {
+  width: 2.37rem;
+  height: 0.96rem;
+  margin: 0 auto;
+  padding: 0.2rem; }
+  .scon li:nth-child(1) {
+    color: #333333;
     font-size: 0.28rem;
     margin-top: 0.1rem; }
-  .con li:nth-child(2) {
+  .scon li:nth-child(2) {
     margin-top: 0.1rem;
-    color: #fff;
+    color: #666666;
     font-size: 0.18rem; }
 
 .fourdian {
   width: 3.47rem;
   height: 1.55rem;
   position: absolute;
-  top: 10.3rem;
+  top: 10.8rem;
   left: 0.25rem; }
   .fourdian .zhou {
     width: 0.15rem;
@@ -289,38 +321,57 @@ body {
       border-radius: 50%;
       background: #fff; }
 
-.time {
+.ftbox {
   width: 3.11rem;
+  height: 0.42rem;
+  background: #38d3e1;
+  margin: 0 auto;
+  border-radius: 0.2rem  0px 0.2rem 0.2rem; }
+
+.ftime {
+  width: 2.6rem;
+  height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; }
-  .time li:nth-child(1) {
-    color: #30aebb;
+  justify-content: space-between;
+  align-items: center; }
+  .ftime li:nth-child(1) {
+    color: #fff;
     font-size: 0.18rem; }
-  .time li:nth-child(2) {
+  .ftime li:nth-child(2) {
     color: #fff;
     font-size: 0.2rem; }
-  .time li:nth-child(3) {
+  .ftime li:nth-child(3) {
     color: #fff;
     font-size: 0.24rem; }
 
-.con {
+.fconbox {
   width: 3.11rem;
-  margin: 0 auto; }
-  .con li:nth-child(1) {
-    color: #fff;
+  height: 1.95rem;
+  margin: 0 auto;
+  background: url("/Static/Imgs/XJ-img/my.png");
+  background-size: cover;
+  box-sizing: border-box; }
+
+.fcon {
+  width: 2.37rem;
+  height: 0.96rem;
+  margin: 0 auto;
+  padding: 0.2rem; }
+  .fcon li:nth-child(1) {
+    color: #333333;
     font-size: 0.28rem;
     margin-top: 0.1rem; }
-  .con li:nth-child(2) {
+  .fcon li:nth-child(2) {
     margin-top: 0.1rem;
-    color: #fff;
+    color: #666666;
     font-size: 0.18rem; }
 
 .fivedian {
   width: 3.47rem;
   height: 1.55rem;
   position: absolute;
-  top: 11.85rem;
+  top: 12.7rem;
   right: 0.25rem; }
   .fivedian .zhou {
     width: 0.15rem;

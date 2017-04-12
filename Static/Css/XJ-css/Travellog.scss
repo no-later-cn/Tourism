@@ -6,8 +6,8 @@
   background:url(/Static/Imgs/XJ-img/head.png);
   background-size: cover;
   .xj-head{
-    @include rect(100%,100%);
-    padding: 0 0.41rem;
+    @include rect(6.69rem,100%);
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,8 +37,10 @@
 }
 //内容
 .content-box{
-  @include rect(100%,10.75rem);
-  margin-top: 0.28rem;
+  @include rect(6.99rem,10.75rem);
+  padding-top: 0.28rem;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .XJ-content{
   @include rect(100%,100%);
@@ -46,17 +48,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.25rem;
+ 
   .content{
     @include rect(100%,2.6rem);
     background: #ffffff;
+    
     box-shadow:0 2px 14px 0 #a1a4ab;
     .Top-content{
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      @include rect(100%,1.92rem);
-      padding: 0 0.19rem;
+      @include rect(6.67rem,1.92rem);
+      margin:   0 auto;
       position: relative;
       .one-img{
         @include rect(2.4rem,1.7rem);
@@ -83,12 +86,13 @@
       }
     }
     .Down-content{
-      margin-top: 0.1rem;
+      padding-top: 0.1rem;
       display: flex;
       justify-content: space-between;
-      @include rect(100%,0.5rem);
+     
 
-      padding: 0 0.19rem;
+      @include rect(6.67rem,0.5rem);
+      margin:   0 auto;
       .Left-content{
         @include rect(1.6rem,100%);
         display: flex;

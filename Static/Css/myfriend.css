@@ -17,7 +17,7 @@ main {
   display: flex;
   justify-content: center; }
   main .main-con {
-    width: 93%;
+    width: calc(100% - 0.28rem);
     height: 100%;
     background: white;
     margin: 0 auto;
@@ -34,10 +34,13 @@ main {
   height: 1.46rem;
   box-sizing: border-box;
   border-bottom: 1px solid #d9d9d9;
-  padding: 0 0.41rem 0 0.17rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  padding: 0 0.41rem 0 0.17rem; }
+  .main-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .main-item .main-item-left {
     width: 66%;
     height: 1.02rem;
@@ -91,6 +94,6 @@ main {
     line-height: 0.4rem;
     text-align: center; }
 
-.main-item.active .main-item-right {
+.main-item-right.active {
   background: #2297f1;
   color: #fff; }

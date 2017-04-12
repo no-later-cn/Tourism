@@ -1,13 +1,13 @@
 div,p,input{box-sizing:border-box;}
 .head{
-	height: 0.88rem;background: #2E9BF1;padding: 0 0.24rem;
+	height: 0.88rem;background-color: #2E9BF1;padding: 0 0.24rem;
 	overflow: hidden;
+    background: url("/Static/Imgs/cart_header.png") no-repeat center/cover;
 }
 .return{
 	width: 0.6rem;height: 0.6rem;float: left;
 	margin-left: 0.08rem;margin-top: 0.14rem;
-	background: url(/Static/Imgs/zxb
-/coupon-return.png) no-repeat;
+	background: url(/Static/Imgs/zxb/coupon-return.png) no-repeat;
 	background-size: contain;
 }
 .head h3{
@@ -56,8 +56,7 @@ div,p,input{box-sizing:border-box;}
 .warp .right .down{
 	width: 0.6rem;height: 0.6rem;float: right;margin-right: 0.35rem;
 	margin-top: -0.1rem;
-	background: url(/Static/Imgs/zxb
-/coupon-down.png) no-repeat;
+	background: url(/Static/Imgs/zxb/coupon-down.png) no-repeat;
 	background-size: contain;
 }
 .btn{

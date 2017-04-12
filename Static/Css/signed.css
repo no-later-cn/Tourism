@@ -1,6 +1,11 @@
 .bg .title > .time, .bg .title .alert, .bg .home thead > tr > td, .bg .home tbody > tr > td {
   color: #333333; }
 
+.bg.active{
+    display:flex;
+    opacity:1;
+}
+
 .bg {
   width: 100vw;
   height: 100vh;

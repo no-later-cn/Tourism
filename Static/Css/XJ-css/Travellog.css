@@ -23,8 +23,8 @@
       display: block;
       width: 0.45rem;
       height: 0.44rem;
-      background: url(/Static/Imgs/XJ-img/back.png);
-      background-size: cover; }
+     
+       }
     .xj-header .xj-head li:nth-child(2) {
       color: #fff;
       font-size: 0.26rem; }
@@ -40,19 +40,21 @@
 
 .content-box {
   width: 6.99rem;
-  height: 10.75rem;
+
   padding-top: 0.28rem;
   margin: 0 auto;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  margin-bottom: 1.5rem;}
 
 .XJ-content {
   width: 100%;
-  height: 100%;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
   .XJ-content .content {
+  	margin-top:0.2rem;
     width: 100%;
     height: 2.6rem;
     background: #ffffff;
@@ -70,6 +72,10 @@
         height: 1.7rem;
         background: #53D9F0;
         border-radius: 3px; }
+       .one-img .photo{
+        	width: 100%;
+        	height: 100%;
+        }
       .XJ-content .content .Top-content .character {
         width: 4.07rem;
         height: 1.62rem;
@@ -85,7 +91,10 @@
           margin-top: 0.08rem; }
         .XJ-content .content .Top-content .character h4 {
           font-size: 0.2rem;
-          color: #b6b6b6; }
+          color: #b6b6b6; 
+          line-height: 0.33rem;
+          text-align: justify;
+          }
     .XJ-content .content .Down-content {
       padding-top: 0.1rem;
       display: flex;

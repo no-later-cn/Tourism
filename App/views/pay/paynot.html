@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- 静止缩放-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="/Static/Css/base.css">
+    <link rel="stylesheet" href="/Static/Css/paynot.css">
+</head>
+<body>
+    <div class="alert-paynot alert">
+        <div class="paynot-con">
+            <div class="close"></div>
+            <div class="sad"></div>
+            <h2 class="pay-title"></h2>
+            <h3 class="pay-title-two"></h3>
+            <div class="border"></div>
+            <div class="info">恭喜获得一张<span>10</span>元优惠券</div>
+            <a href="" id="button"></a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="/Static/Js/jquery.min.js"></script>
+<script>
+    $(function () {
+        if($('.alert').hasClass('alert-paynot')){
+            $('.pay-title').text('支付失败');
+            $('.pay-title-two').text('Payment failure');
+            $('.info').css({display:'none'})
+            $('.sad').css({backgroundImage:'url(/Static/Imgs/pay/sad.png)'});
+            $('#button').css({backgroundImage:'url(/Static/Imgs/pay/button.png)'});
+        }else if($('.alert').hasClass('alert-paygood')){
+            $('.sad').css({backgroundImage:'url(/Static/Imgs/pay/rmb.png)',height:'1.23rem'});
+            $('.pay-title').text('支付成功');
+            $('.pay-title-two').text('Payment failure');
+            $('.info').css({display:'block'});
+            $('#button').css({backgroundImage:'url(/Static/Imgs/pay/button1.png)'})
+        }
+    })
+</script>

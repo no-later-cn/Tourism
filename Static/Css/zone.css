@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url(zone-heading.css);
 body {
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .main-item-left .main-item-info p {
   color: #666666; }
@@ -16,11 +17,11 @@ body {
 
 main {
   width: 100%;
-  height: 8.3rem;
+  height: 8.7rem;
   display: flex;
   justify-content: center; }
   main .main-con {
-    width: 93%;
+    width: calc(100% - 0.28rem);
     height: 100%;
     background: white;
     margin: 0 auto;
@@ -37,7 +38,7 @@ main {
   height: 0.94rem;
   box-sizing: border-box;
   border-bottom: 1px solid #d9d9d9;
-  padding: 0.25rem 0.18rem 0.17rem; }
+  padding: 0 0.18rem; }
   .main-item a {
     width: 100%;
     height: 100%;
@@ -49,10 +50,11 @@ main {
   width: 50%;
   height: 100%;
   display: flex;
-  color: #fff; }
+  color: #fff;
+  align-items: center; }
   .main-item-left .main-item-img {
     width: 0.5rem;
-    height: 100%;
+    height: 0.5rem;
     border-radius: 50%;
     margin-right: 0.2rem;
     line-height: 1.7;
@@ -82,7 +84,7 @@ main {
 
 .main-item-right {
   width: 1.08rem;
-  height: 0.2rem;
+  height: 0.3rem;
   display: flex; }
   .main-item-right .bubble {
     width: 0.5rem;

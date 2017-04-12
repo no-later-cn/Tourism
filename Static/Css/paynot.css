@@ -1,0 +1,58 @@
+.alert-paynot, .alert-paygood {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.paynot-con {
+  width: 5.4rem;
+  height: 3.88rem;
+  background: url(/Static/Imgs/pay/paynot.png) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  position: relative; }
+  .paynot-con .sad {
+    width: 1.3rem;
+    height: 1.46rem;
+    margin-bottom: 0.32rem;
+    background: center/cover no-repeat; }
+  .paynot-con .pay-title {
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #000; }
+  .paynot-con .pay-title-two {
+    line-height: 1.7;
+    color: #666666;
+    font-size: 0.36rem; }
+  .paynot-con .border {
+    width: 2.2rem;
+    height: 5px;
+    background: url(/Static/Imgs/pay/xian.png) center/cover no-repeat; }
+  .paynot-con .info {
+    font-size: 0.26rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem; }
+    .paynot-con .info span {
+      color: #fc1b35; }
+  .paynot-con #button {
+    width: 2.8rem;
+    height: 0.74rem;
+    background: center/cover no-repeat;
+    position: absolute;
+    bottom: -0.45rem;
+    border: 0;
+    outline: none; }
+  .paynot-con .close {
+    width: 0.44rem;
+    height: 0.51rem;
+    background: url(/Static/Imgs/pay/not-close.png) center/cover no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0.34rem; }

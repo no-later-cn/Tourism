@@ -3,11 +3,11 @@ $(function () {
     var $thead = $('#thead'),
         $tbody = $('#tbody'),
         bg = $('.bg'),
-        Mimg = $('.conent'),
         wk = true,
         slidate = new Date(),
         _nullnei = '',
         de = slidate.getDate();
+    var min = $('.conent');
     var monthFirst = new Date(slidate.getFullYear(), parseInt(slidate.getMonth()), 1).getDay();//获取当月的1日等于星期几
     var d = new Date(slidate.getFullYear(), parseInt(slidate.getMonth() + 1), 0); //获取月
     var conter = d.getDate();//获取当前月的天数
@@ -47,23 +47,12 @@ $(function () {
     })
     var flag= true;
     $(".calendar").click(function () {
-        if(flag){
-            $(bg).css({
-                display:'flex',opacity:1
-            })
-            flag = false;
-        }else{
-            flag = true;
-            $(bg).css({
-                display:'none',opacity:0
-            })
-        }
+        $(bg).toggleClass('active');
     })
-    $(bg).bind('click',function(e){
-        if(!$(this).is(Mimg) && !$(this).is($(".calendar") && flag)){
-            $(this).css({
-                display:'none',opacity:0
-            })
+    $(document).bind('click',bg,function(e){
+        var qd=e.target;
+        if($(qd).is(bg)){
+            $(bg).toggleClass('active');
         }
     })
     function Funback() {

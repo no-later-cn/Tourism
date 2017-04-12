@@ -23,38 +23,34 @@ section.picture-show {
   width: 100%;
   height: 3.8rem;
   margin-top: 1rem;
-  overflow: hidden;
-  position: relative; }
+  overflow-x: scroll; }
   section.picture-show ul {
-    height: 3rem;
-    width: 14.1rem;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: -3.2rem; }
+    height: 3.8rem;
+    width: 14.3rem;
+    display:flex;
+    align-items:center;}
   section.picture-show li {
     width: 4.5rem;
-    height: 100%;
+    height: 3rem;
     margin-right: 0.2rem;
-    float: left;
     border-radius: 0.2rem;
     background-position: center;
     background-size: 126%;
     background-repeat: no-repeat; }
   section.picture-show li:nth-of-type(1) {
+    margin-left:0.2rem;
     background-image: url("/Static/Imgs/indeximgs/heatPlay-details-1.png"); }
   section.picture-show li:nth-of-type(2) {
     background-image: url("/Static/Imgs/indeximgs/heatPlay-details-2.png"); }
   section.picture-show li:nth-of-type(3) {
     background-image: url("/Static/Imgs/indeximgs/heatPlay-details-3.png"); }
 
-section.introduce h3 {
+section.introduce h3:nth-of-type(1) {
   color: #333333;
   line-height: 0.4rem; }
 
-section.introduce h4 {
-  color: #999999;
+section.introduce h3:nth-of-type(2) {
+  color: #666666;
   line-height: 0.5rem; }
 
 section.introduce text {
@@ -64,13 +60,13 @@ section.introduce text {
   padding-top: 0.1rem; }
 
 section.mass {
-  margin-top: 0.3rem;
+  margin-top: 0.24rem;
   font-size: 0.35rem;
   font-weight: bolder;
-  line-height: 0.7rem;
+  line-height: 0.66rem;
   color: #333333; }
   section.mass p.rmb {
-    font-size: 0.5rem; }
+    font-size: 0.46rem; }
     section.mass p.rmb span:nth-of-type(2) {
       color: #FC1B35; }
   section.mass p.date, section.mass p.venue, section.mass p.destination, section.mass p.number {
@@ -113,7 +109,7 @@ footer {
   box-sizing:border-box;
   width: 100%;
   height: 1.2rem;
-  margin-top: 0.4rem; }
+  margin-top: 0.3rem; }
   footer a {
     display: block;
     height: 100%;

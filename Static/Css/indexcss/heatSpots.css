@@ -14,14 +14,9 @@ head {
 
 .container {
   width: 100%;
-<<<<<<< HEAD
   margin-top: 1rem;
-  margin-bottom: 1rem; }
-=======
-  height: 100vh;
-  padding-bottom:1.8rem;
+  margin-bottom: 1rem;
  }
->>>>>>> b69df47f2138f1d2f911c28b95ab32c95adb5454
   .container ul li {
     width: 96%;
     height: 3.15rem;
@@ -45,20 +40,16 @@ head {
         align-items: center;
         color: #fff;
         text-align: center; }
-        .container ul li a .text h3 {
+        .container ul li a .text h2 {
           line-height: 0.54rem; }
-        .container ul li a .text h5 {
+        .container ul li a .text .english {
+          font-size:0.28rem;
           line-height: 0.4rem;
           letter-spacing: 0; }
-          .container ul li a .text h5 span:nth-of-type(2) {
-            font-weight: normal;
-            font-style: normal; }
         .container ul li a .text div {
           height: 0.3rem; }
-        .container ul li a .text h4 {
-          line-height: 0.4rem;
-          font-weight: normal;
-          font-style: normal; }
+        .container ul li a .text .overview {
+          line-height: 0.4rem;}
   .container ul li:nth-of-type(1) a {
     background: url("/Static/Imgs/indeximgs/heatSpots-1.png") center bottom/cover; }
   .container ul li:nth-of-type(2) a {

@@ -23,7 +23,7 @@
       display: block;
       width: 0.45rem;
       height: 0.44rem;
-      background: url(/Static/Imgs/XJ-img/back.png);
+      /*background: url(/Static/Imgs/XJ-img/back.png);*/
       background-size: cover; }
     .xj-header .xj-head li:nth-child(2) {
       color: #fff;

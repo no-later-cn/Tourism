@@ -217,6 +217,9 @@ body {
       height: 100%;
       background: #3B3B1F;
       border-radius: 0.1rem 0 0 0.1rem; }
+      .lists .list .img .touxiang {
+        width: 100%;
+        height: 100%; }
     .lists .list .right {
       position: absolute;
       width: 4.56rem;

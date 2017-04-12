@@ -2,7 +2,7 @@
 
  body{
      box-sizing: border-box;
-     
+     background: black;
  }
  body,html{
      width: 100%;
@@ -10,7 +10,7 @@
  }
 .bigbox{
     box-sizing: border-box;
-     @include rect(100%,120%);
+     @include rect(100%,130%);
   background:url(/Static/Imgs/XJ-img/backgroundimg.png) ;
   background-size: cover;
   
@@ -18,7 +18,7 @@
 
 .XJ-box{
     box-sizing: border-box;
-     @include rect(100%,120%);
+     @include rect(100%,130%);
     background:rgba(0,0,0,0.6);
     position: absolute;
     top:0;
@@ -125,7 +125,7 @@
         right: 0;
         
         width: 1px;
-        height: 100vh;
+        height: 110vh;
         background: #38d3e1;
         margin:auto;
     }
@@ -396,7 +396,6 @@
 .fivedian{
     width: 3.47rem;
     height: 1.55rem;
-   
     position: absolute;
     top: 12.7rem;
     right: 0.25rem;
@@ -415,13 +414,24 @@
         }
     }
 }
-.time{
-    width: 3.11rem;
+.fitimes{
+     width: 3.11rem;
+    height: 0.42rem;
+    background: #f02987;
+    margin: 0 auto;
+     border-radius: 0px 0.2rem 0.2rem 0.2rem;
+}
+.fitime{
+     width: 2.6rem;
+    height: 100%;
+    
     margin: 0 auto;
     display: flex;
   justify-content: space-between;
+  align-items: center;
+ 
     li:nth-child(1){
-        color: #30aebb;
+        color: #fff;
         font-size: 0.18rem;
     }
     li:nth-child(2){
@@ -433,17 +443,28 @@
         font-size: 0.24rem;
     }
 }
-.con{
+.ficonbox{
     width: 3.11rem;
+    height: 1.95rem;
+   
     margin: 0 auto;
-    li:nth-child(1){
-        color: #fff;
+    background: url("/Static/Imgs/XJ-img/my_11.png");
+    background-size: cover;
+     box-sizing: border-box;
+}
+.ficon{
+    width: 2.37rem;
+    height: 0.96rem;
+    margin: 0 auto;
+    padding: 0.2rem;
+   li:nth-child(1){
+        color: #333333;
         font-size: 0.28rem;
         margin-top: 0.1rem;
     }
     li:nth-child(2){
         margin-top: 0.1rem;
-        color: #fff;
+        color: #666666;
         font-size: 0.18rem;
     }
 }

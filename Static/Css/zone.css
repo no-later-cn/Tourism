@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(footer.css);
 @import url(zone-heading.css);
 body {
   height: 100%; }
@@ -21,7 +20,7 @@ main {
   display: flex;
   justify-content: center; }
   main .main-con {
-    width: calc(100% - 0.28rem);
+    width: 93%;
     height: 100%;
     background: white;
     margin: 0 auto;

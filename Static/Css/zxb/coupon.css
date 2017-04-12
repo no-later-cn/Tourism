@@ -11,7 +11,7 @@ div,p,input{box-sizing:border-box;}
 	background-size: contain;
 }
 .head h3{
-	width: 1.55rem;height: 0.6rem;margin: 0.14rem auto;
+	width: 2.2rem;height: 0.6rem;margin: 0.14rem auto;
 	font-size: 0.3rem;text-align: center;color: #FFF;
 }
 .head h3>span{
@@ -34,8 +34,7 @@ div,p,input{box-sizing:border-box;}
 }
 .warp .left .ljq{
 	width: 0.8rem;height: 0.4rem;float: left;margin-top: 0.14rem;
-	background: url(/Static/Imgs/zxb
-/ljq.png) no-repeat;
+	background: url(/Static/Imgs/zxb/ljq.png) no-repeat;
 	background-size: contain;
 }
 .warp .left p{
@@ -51,7 +50,7 @@ div,p,input{box-sizing:border-box;}
 	font-size: 0.28rem;color: #363636;
 }
 .warp .right p{
-	width: 3rem;height: 0.55rem;float: left;margin-top: 0.12rem;
+	width: 3.16rem;height: 0.55rem;float: left;margin-top: 0.12rem;
 	font-size: 0.22rem;color: #999;line-height: 0.36rem;
 }
 .warp .right .down{

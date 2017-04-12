@@ -16,10 +16,17 @@ class indexController extends Framework{
     }
     public function heatPlay_details(){
         $this->assign('header_t',"景点详情");
-        $this->assign("url","/index/".$_GET['sign']);
         $this->assign("icon_l",true);
         $this->assign("icon_r",true);
         $this->assign('header_d',"ATTRACTIONS DETAILS");
+
+        $this->assign("method","index");
+        $this->assign("method","index");
+        $this->assign("header_t","热门详情");
+        $this->assign("icon_l",true);
+        $this->assign("icon_r",true);
+        $this->assign("header_d","ATTRACTIONS DETALLS");
+
         $this->display("index/heatPlay_details.html");
     }
     public function heatSpots(){
@@ -32,14 +39,22 @@ class indexController extends Framework{
     }
     public function logdetails(){
         $this->assign("method","index");
-        $this->display("index/logdetails.html");
+        $this->display("log/Travellog.html");
     }
     public function travel(){
+
         $this->assign('header_t',"旅行攻略");
         $this->assign('url','/index');
         $this->assign("icon_l",true);
         $this->assign("icon_r",true);
         $this->assign('header_d',"TRAVEL STRATEGY");
+
+        $this->assign("method","index");
+        $this->assign("method","index");
+        $this->assign("header_t","旅行攻略");
+        $this->assign("icon_l",true);
+        $this->assign("icon_r",true);
+        $this->assign("header_d","TRAVEL RAIDERS");
         $this->display("index/travel.html");
     }
 

@@ -83,7 +83,7 @@ header {
     .cart-info .title h6 {
       font-weight: 600;
       color: #52514E;
-      font-size: .32rem;
+      font-size: .22rem;
       line-height: 1.2em; }
     .cart-info .title span {
       color: #FF4156;
@@ -171,16 +171,16 @@ main {
   padding: 0 .3rem; }
 
 main.text {
-  height: 26%;
+  height: 22%;
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
   main.text .title h3 {
-    font-size: .4rem;
+    font-size: .3rem;
     font-weight: 600; }
   main.text .title span {
     color: #4E4E4E;
-    font-size: .36rem;
+    font-size: .22rem;
     line-height: 1.3em; }
     main.text .title span b {
       color: #434343;
@@ -191,7 +191,7 @@ main.text {
     -webkit-line-clamp: 3;
     overflow: hidden;
     color: #454545;
-    font-size: .34rem;
+    font-size: .2rem;
     line-height: .48rem;
     letter-spacing: .015rem; }
 

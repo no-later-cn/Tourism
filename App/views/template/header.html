@@ -1,5 +1,5 @@
 <header>
-    <a href="<?php echo $url;?>" class="<?php echo isset($icon_l)?'return icon-return':'';?>" style="width:.6rem;height: .6rem"></a>
+    <a href="javascript:;" onclick=" window.history.back()"; class="<?php echo isset($icon_l)?'return icon-return':'';?>" style="width:.6rem;height: .6rem"></a>
     <div class="text">
         <h2><?php echo $header_t?></h2>
         <span><?php echo $header_d?></span>
@@ -16,8 +16,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position:fixed;
-    top:0;left:0;
+
 }
 
 header .return {
@@ -29,8 +28,9 @@ header .return {
     margin-left: .15rem;
     text-align: center;
     padding-right: .07rem;
-    line-height: .6rem;
+    line-height: .65rem;
     color: #fff;
+    font-size: .3rem;
 }
 
 header .text {
@@ -49,100 +49,12 @@ header .text span {
 }
 
 header .icon-share {
-    font-size: .5rem;
+    font-size: .48rem;
     line-height: .6rem;
     color: #fff;
     margin-right: .17rem;
 }
 
-.cartlist-wrap {
-    width: 100%;
-    padding: 0 .2rem;
-    box-sizing: border-box;
-}
 
-.cartlist {
-    width: 100%;
-}
 
-.cartlist li {
-    width: 100%;
-    box-shadow: 0 4px 6px #eee;
-    margin-top: .2rem;
-    border-radius: .2rem;
-}
-
-.cartlist li a {
-    width: 100%;
-    display: flex;
-    height: 1.8rem;
-    background: #fff;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cart {
-    width: 30%;
-    padding-left: .1rem;
-}
-
-.cart-info {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-}
-
-.cart-info .title {
-    padding-bottom: .1rem;
-    border-bottom: 1px dashed #D4D4D4;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-.cart-info .title::after,
-.cart-info .title::before {
-    content: '';
-    width: .08rem;
-    height: .08rem;
-    background: #707070;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    bottom: -0.04rem;
-}
-
-.cart-info .title::before {
-    left: auto;
-    right: 0;
-}
-
-.cart-info .title h6 {
-    font-weight: 600;
-    color: #52514E;
-    font-size: .32rem;
-    line-height: 1.2em;
-}
-
-.cart-info .title span {
-    color: #FF4156;
-    font-size: .3rem;
-}
-
-.cart-info .title span i {
-    color: #2798F0;
-    font-size: .32rem;
-}
-
-.cart-info .user {
-    padding-top: .1rem;
-    font-size: .3rem;
-}
-
-.cart-info .user img {
-    width: .6rem;
-    vertical-align: middle;
-}
-
-.op
 </style>

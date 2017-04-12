@@ -8,7 +8,7 @@ class DBPDO {
 	public $PDO;
 	public function __construct() {
 //        创建连接数据库的PDO实例
-		$dsn = 'mysql:host=sqld.duapp.com;dbname=zflFkPGZQPzcSAAoHxqI;port=4050;charset=utf8';
+		$dsn = 'mysql:host=sqld.duapp.com;dbname=dpiyXubBmjLOmgGxbuqv;port=4050;charset=utf8';
 		//连接
 		$options = array(
 			//默认是PDO::ERRMODE_SILENT, 0, (忽略错误模式)
@@ -17,7 +17,7 @@ class DBPDO {
 			PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
 		);
 		try {
-			$this->PDO = new PDO($dsn, '12907664add34ed185274d56f3b303f8', '8beebc9975ef4d87853ffb4b9c214a72', $options);
+			$this->PDO = new PDO($dsn, '4d4bf2123b504851b8cfdfe9e0672d1e', '74bb9a4a53f543d6b63387fec0c682e0', $options);
 
 		} catch (PDOException $e) {
 			die("数据连接失败：" . $e->getMessage());

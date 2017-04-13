@@ -4,8 +4,15 @@ use Core\Framework;
 class indexController extends Framework{
     public function index(){
         $this->assign("method","index");
-        $this->display("index/index.html");
+        if(isset($_COOKIE['login'])){
+
+            $this->display("index/index.html");
+        }else{
+
+            $this->redirect('/splash');
+        }
     }
+
     public function heatPlay(){
         $this->assign('header_t',"当季热玩");
         $this->assign("icon_l",true);

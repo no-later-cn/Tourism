@@ -40,7 +40,7 @@ class Framework
             }
             include $file;
         }else{
-            include VIEW.'404.html';
+            include VIEW.'template/404.html';
         }
     }
 //    redirect   变更请求头

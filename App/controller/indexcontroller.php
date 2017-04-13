@@ -4,7 +4,7 @@ use Core\Framework;
 class indexController extends Framework{
     public function index(){
         $this->assign("method","index");
-        if(isset($_COOKIE['login'])){
+        if(isset($_COOKIE['signin'])){
 
             $this->display("index/index.html");
         }else{

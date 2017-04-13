@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <!-- 静止缩放-->
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="/Static/Css/base.css">
-    <link rel="stylesheet" href="/Static/Css/back.css">
-    <title>选择银行卡</title>
+<?php include VIEW.'template/meat.html'?>
+<link rel="stylesheet" href="/Static/Css/back.css">
+<title>选择银行卡</title>
 </head>
+
 <body>
     <header class="order">
-        <div class="return " onclick=" window.history.back()";></div>
+        <div class="return " onclick=" window.history.back()" ;></div>
         <div class="text">
             <h2>选择银行卡</h2>
             <span>SELECT BANK CARD</span>
@@ -28,7 +19,6 @@
         </div>
         <div class="add"></div>
     </header>
-
     <div class="back">
         <ul class="back-list">
             <li class="back-item"></li>
@@ -36,7 +26,6 @@
             <li class="back-item"></li>
         </ul>
     </div>
-
     <main>
         <ul class="main-list">
             <li class="main-item">
@@ -44,7 +33,8 @@
                     <h2>银行卡号</h2>
                     <h4>BANKNUMBER</h4>
                 </div>
-                <div class="main-item-right"><p>6219 <span>******************</span> 6580</p>
+                <div class="main-item-right">
+                    <p>6219 <span>******************</span> 6580</p>
                 </div>
             </li>
             <li class="main-item">
@@ -75,4 +65,5 @@
         <a href="/index.php/pay/paypass" class="back-click"></a>
     </div>
 </body>
+
 </html>

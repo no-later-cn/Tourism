@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <!-- 静止缩放-->
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="/Static/Css/base.css">
-    <link rel="stylesheet" href="/Static/Css/paypass.css">
-    <link rel="stylesheet" href="/Static/Css/paynot.css">
-    <title>选择银行卡</title>
+<?php include VIEW.'template/meat.html'?>
+<link rel="stylesheet" href="/Static/Css/paypass.css">
+<link rel="stylesheet" href="/Static/Css/paynot.css">
+<title>选择银行卡</title>
 </head>
+
 <body>
     <header class="order">
-        <div class="return " onclick=" window.history.back()";></div>
+        <div class="return " onclick=" window.history.back()" ;></div>
         <div class="text">
             <h2>选择银行卡</h2>
         </div>
         <div class="add"></div>
     </header>
-
     <div class="back">
         <ul class="back-list">
             <li class="back-item"></li>
@@ -29,25 +19,21 @@
             <li class="back-item"></li>
         </ul>
     </div>
-
     <div class="back-input">
-        <form id="password" >
-            <input readonly class="pass" type="password"maxlength="1"value="" >
-            <input readonly class="pass" type="password"maxlength="1"value="">
-            <input readonly class="pass" type="password"maxlength="1"value="">
-            <input readonly class="pass" type="password"maxlength="1"value="">
-            <input readonly class="pass" type="password"maxlength="1"value="">
-            <input readonly class="pass pass_right" type="password"maxlength="1"value="">
+        <form id="password">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass" type="password" maxlength="1" value="">
+            <input readonly class="pass pass_right" type="password" maxlength="1" value="">
         </form>
     </div>
-
     <div class="key-title">
         <h1>输入支付密码完成支付</h1>
         <p>Enter the payment password to complete the payment</p>
     </div>
-
     <div class="back-key"></div>
-
     <div class="alert-paynot alert" style="display: none;">
         <div class="paynot-con">
             <div class="close"></div>
@@ -62,4 +48,5 @@
 </body>
 <script type="text/javascript" src="/Static/Js/jquery.min.js"></script>
 <script type="text/javascript" src="/Static/Js/ladingPasswordConfirm.js"></script>
+
 </html>

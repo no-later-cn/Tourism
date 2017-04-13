@@ -1,73 +1,67 @@
-<!DOCTYPE html>
-<html>
+<?php include VIEW.'template/meat.html'?>
+<title>日志发布</title>
+<link rel="stylesheet" href="<?php echo CSS_PATH?>XJ-css/Development.css">
+</head>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<title>日志发布</title>
-		   <?php include VIEW.'template/meat.html'?>
-		<link rel="stylesheet" href="<?php echo CSS_PATH?>base.css">
-		<link rel="stylesheet" href="<?php echo CSS_PATH?>XJ-css/Development.css">
-	</head>
-
-	<body>
-		<div class="xj-header">
-			<ul class="xj-head">
-				<li>
-					<a href="javascript:;" onclick='window.history.back()'>取消</a>
-				</li>
-				<li>
-					<p>发布动态</p>
-					<p>TRAVELLOG</p>
-				</li>
-				<li>
-					<a href="/index.php/log/Personaljournal">发送</a>
-				</li>
-			</ul>
-		</div>
-		<!--输入框-->
-		<div class="XJ-collent">
-			<form action="">
-				<textarea name="textarea" rows="" cols="">这一刻的想法...</textarea>
-			</form>
-			<div class="bigbox">
-				<ul class="photobox">
-					<li class="firstphoto"></li>
-					<li class="secondphoto"></li>
-					<li class="third">
-						<span>
+<body>
+    <div class="xj-header">
+        <ul class="xj-head">
+            <li>
+                <a href="javascript:;" onclick='window.history.back()'>取消</a>
+            </li>
+            <li>
+                <p>发布动态</p>
+                <p>TRAVELLOG</p>
+            </li>
+            <li>
+                <a href="/index.php/log/Personaljournal">发送</a>
+            </li>
+        </ul>
+    </div>
+    <!--输入框-->
+    <div class="XJ-collent">
+        <form action="">
+            <textarea name="textarea" rows="" cols="">这一刻的想法...</textarea>
+        </form>
+        <div class="bigbox">
+            <ul class="photobox">
+                <li class="firstphoto"></li>
+                <li class="secondphoto"></li>
+                <li class="third">
+                    <span>
 		<p class="icon-coupon"></p>
 		<p>照片/视频</p>
 		</span>
-					</li>
-				</ul>
-
-			</div>
-			<div class="XJ-location">
-				<ul>
-					<li class="location">
-						<span>
+                </li>
+            </ul>
+        </div>
+        <div class="XJ-location">
+            <ul>
+                <li class="location">
+                    <span>
 			                <p class="icon-location"></p>
 			            </span>
-						<p>所在位置</p>
-					</li>
-					<li><a href=""></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="Sync">
-			<ul>
-				<li>
-					<p class="icon-QQ"></p>
-				</li>
-				<li>
-					<p class="icon-WeChat"></p>
-				</li>
-			</ul>
-			<span>
+                    <p>所在位置</p>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="Sync">
+        <ul>
+            <li>
+                <p class="icon-QQ"></p>
+            </li>
+            <li>
+                <p class="icon-WeChat"></p>
+            </li>
+        </ul>
+        <span>
 			<p class="icon-clock"></p>
 			</span>
-		</div>
-	</body>
+    </div>
+</body>
 
 </html>

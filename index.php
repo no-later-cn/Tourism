@@ -14,5 +14,5 @@ require 'Core/DBPDO.php';
 require 'Core/common.php';
 
 \Core\Framework::start();
-//include VIEW.'pay/back.html';
+//include VIEW.'pay/paypass.html';
 

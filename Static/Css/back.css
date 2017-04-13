@@ -1,21 +1,20 @@
 @charset "UTF-8";
 .order {
   width: 100%;
-  height: 1.86rem;
+  height: 2.07rem;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 0.48rem;
+  padding: 0 0.24rem;
   color: #fff;
   font-size: 0.44rem;
   align-items: flex-start;
-  background: url("/Static/Imgs/cart_header.png") no-repeat center/cover; }
+  background: url("/Static/Imgs/pay/bg2.png") no-repeat center/cover; }
 
 .order .return {
-  background: url(/Static/Imgs/XJ-img/back.png);
-  background-size: cover;
-  width: .44rem;
-  height: .44rem; }
+  background: url(/Static/Imgs/XJ-img/back.png) no-repeat center/0.44rem;
+  width: .88rem;
+  height: .88rem; }
 
 .order .text {
   text-align: center;
@@ -58,7 +57,137 @@
   background: #FCD125; }
 
 .order .add {
-  background: url(/Static/Imgs/XJ-img/append.png);
-  background-size: cover;
-  width: .44rem;
-  height: .44rem; }
+  background: url(/Static/Imgs/XJ-img/append.png) no-repeat center/0.44rem;
+  width: .88rem;
+  height: .88rem; }
+
+body {
+  overflow: hidden; }
+
+.back {
+  width: 100%;
+  height: 2.73rem; }
+  .back .back-list {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .back .back-list li {
+      width: 4.77rem;
+      height: 2.98rem;
+      float: left;
+      position: absolute;
+      top: -0.66rem;
+      border-radius: 10px;
+      background: url(/Static/Imgs/pay/back.png) no-repeat center/cover; }
+    .back .back-list li:nth-child(1) {
+      left: -4.4rem;
+      background-image: url(/Static/Imgs/pay/back2.png); }
+    .back .back-list li.active {
+      transform: scale(1.12);
+      left: 0;
+      right: 0;
+      margin: auto; }
+    .back .back-list li:nth-child(3) {
+      background-image: url(/Static/Imgs/pay/back1.png);
+      right: -4.4rem; }
+
+main {
+  width: 100%;
+  height: 3.36rem; }
+  main .main-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: wrap column;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 1.15rem; }
+    main .main-list li {
+      width: 100%;
+      height: 1.12rem;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e5e5e5;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+      main .main-list li::after, main .main-list li::before {
+        content: '';
+        width: 3px;
+        height: 3px;
+        position: absolute;
+        bottom: -2px;
+        background: #9d9c9c; }
+      main .main-list li::after {
+        left: 0; }
+      main .main-list li::before {
+        right: 0; }
+      main .main-list li .main-item-left {
+        width: 1.74rem;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0 0.08rem;
+        overflow: hidden; }
+        main .main-list li .main-item-left h2 {
+          color: #666666;
+          font-size: 0.28rem;
+          display: block;
+          position: relative; }
+          main .main-list li .main-item-left h2::after {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 3px;
+            background: #38d3e1;
+            position: absolute;
+            top: 60%;
+            left: -0.08rem; }
+        main .main-list li .main-item-left h4 {
+          color: #aaaaaa;
+          line-height: 2;
+          font-size: 0.18rem;
+          font-family: 'San Francisco', 'Roboto', sans-serif; }
+      main .main-list li .main-item-right {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        height: auto;
+        color: #333333;
+        font-size: 0.2rem;
+        padding-bottom: 0.24rem; }
+        main .main-list li .main-item-right .main-info {
+          width: 0.69rem;
+          height: 0.24rem;
+          margin-left: 0.1rem;
+          background: #148bee;
+          border-radius: 50px;
+          font-size: 0.18rem;
+          text-align: center;
+          color: #fff;
+          line-height: 0.24rem; }
+
+.bar-code {
+  width: 100%;
+  height: 1.15rem;
+  display: flex;
+  justify-content: center;
+  margin-top: .45rem; }
+  .bar-code .bar-code-img {
+    width: 5.6rem;
+    height: 100%;
+    display: block;
+    background: url(/Static/Imgs/pay/tiaoma.png) no-repeat center/cover; }
+
+.button {
+  width: 100%;
+  height: .96rem;
+  display: flex;
+  margin-top: 0.45rem;
+  justify-content: center; }
+  .button .back-click {
+    width: 5.32rem;
+    height: 100%;
+    background: url(/Static/Imgs/pay/back-button.png) no-repeat center/cover;
+    display: block; }

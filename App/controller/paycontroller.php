@@ -9,6 +9,12 @@ class payController extends Framework {
 	public function pay(){
 		$this->display('pay/pay.html');
 	}
+    public function back(){
+        $this->display('pay/back.html');
+    }
+    public function paypass(){
+        $this->display('pay/paypass.html');
+    }
 
 }
 

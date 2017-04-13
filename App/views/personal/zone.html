@@ -13,6 +13,48 @@
     <link rel="stylesheet" href="<?php echo CSS_PATH?>zone.css">
 </head>
 <body>
+<div class="nav">
+    <div class="calendar icon-sign"></div>
+    <div class="set icon-install"><a href="/index.php/personal/setting" style="position: relative;top:-100%;display: inline-block;width: 100%;height: 100%;"></a></div>
+</div>
+
+<!----------------------签到---------------->
+<link rel="stylesheet" href="<?php echo CSS_PATH?>signed.css">
+<div class="bg">
+    <div class="conent">
+        <div class="title">
+            <div class="time">2017-4-6</div>
+            <div class="alert">
+                <p>签到提醒</p>
+                <div class="btn-border bin-on">
+                    <div class="bin bin-r"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home">
+            <table  cellspacing="1" cellpadding="1" >
+                <thead id="thead">
+                <tr>
+                    <td>日</td>
+                    <td>一</td>
+                    <td>二</td>
+                    <td>三</td>
+                    <td>四</td>
+                    <td>五</td>
+                    <td>六</td>
+                </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        <div class="item-con">
+            <p>今日签到奖励  <span id="signed-con">积分+15</span></p>
+            <p>惊喜礼包奖励  <span>积分+15</span>  <span>补签卡+1</span></p>
+        </div>
+    </div>
+</div>
+<!----------------------签到---------------->
+
 <?php include 'zone-heading.html'?>
     <!--中间内容-->
     <main>
@@ -103,3 +145,5 @@
 
 </body>
 </html>
+<script src="<?php echo JS_PATH?>jquery.min.js"></script>
+<script src="<?php echo JS_PATH?>signed.js"></script>

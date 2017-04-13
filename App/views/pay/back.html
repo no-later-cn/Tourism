@@ -13,21 +13,66 @@
     <title>选择银行卡</title>
 </head>
 <body>
-<header class="order">
-    <div class="return icon-return-1" onclick=" window.history.back()";></div>
-    <div class="text">
-        <h2>选择银行卡</h2>
-        <span>SELECT BANK CARD</span>
-        <div class="load">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
+    <header class="order">
+        <div class="return " onclick=" window.history.back()";></div>
+        <div class="text">
+            <h2>选择银行卡</h2>
+            <span>SELECT BANK CARD</span>
+            <div class="load">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
         </div>
-    </div>
-    <div class="add"></div>
-</header>
+        <div class="add"></div>
+    </header>
 
+    <div class="back">
+        <ul class="back-list">
+            <li class="back-item"></li>
+            <li class="back-item active"></li>
+            <li class="back-item"></li>
+        </ul>
+    </div>
+
+    <main>
+        <ul class="main-list">
+            <li class="main-item">
+                <div class="main-item-left">
+                    <h2>银行卡号</h2>
+                    <h4>BANKNUMBER</h4>
+                </div>
+                <div class="main-item-right"><p>6219 <span>******************</span> 6580</p>
+                </div>
+            </li>
+            <li class="main-item">
+                <div class="main-item-left">
+                    <h2>身份验证</h2>
+                    <h4>AUTHENTICATION</h4>
+                </div>
+                <div class="main-item-right">
+                    <p>140 109 18992632 2589</p>
+                    <div class="main-info">身份证</div>
+                </div>
+            </li>
+            <li class="main-item">
+                <div class="main-item-left">
+                    <h2>开户行</h2>
+                    <h4>BANK ACCUNT</h4>
+                </div>
+                <div class="main-item-right">
+                    <p>中国银行</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <div class="bar-code">
+        <div class="bar-code-img" id="bar-code-img"></div>
+    </div>
+    <div class="button">
+        <a href="/index.php/pay/paypass" class="back-click"></a>
+    </div>
 </body>
 </html>

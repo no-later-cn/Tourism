@@ -305,7 +305,7 @@ body {
       width: 0.46rem;
       height: 0.46rem;
       border-radius: 100%;
-      background: #2C9BF1 url("/Static/Imgs/login/cir.png") no-repeat center/cover; }
+      background: #2C9BF1 url("/Static/Imgs/cir.png") no-repeat center/cover; }
       .nav .back a span, .nav .person a span {
         font-size: 0.2rem;
         color: #fff; }

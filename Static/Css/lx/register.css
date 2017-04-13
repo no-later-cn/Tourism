@@ -1,0 +1,168 @@
+@import url("../base.css");
+body {
+  background: url("/Static/Imgs/lx/loginbg.png") no-repeat;
+  background-size: cover; }
+
+.head {
+  width: 100%;
+  height: 1rem;
+  display: flex; }
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+.nav .back, .nav .person {
+  width: 0.9rem;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+.nav .back a, .nav .person a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.46rem;
+  height: 0.46rem;
+  border-radius: 100%;
+  background: #2C9BF1 url("/Static/Imgs/cir.png") no-repeat center/cover; }
+.nav .back a span, .nav .person a span {
+  font-size: 0.2rem;
+  color: #fff; }
+
+.back {
+  justify-content: flex-end; }
+
+.person {
+  justify-content: flex-start; }
+
+
+.content {
+  width: 4.47rem;
+  height: 6.7rem;
+  margin: 1.08rem auto; }
+  .content .con-top {
+    width: 2.5rem;
+    height: 1.04rem;
+    background: url("/Static/Imgs/lx/zucelo.png") no-repeat;
+    background-size: cover;
+    margin-bottom: 0.27rem;
+    margin-left: 0.1rem; }
+  .content .con-main {
+    width: 4.47rem;
+    height: 4.91rem;
+    border-radius: 0.1rem;
+    background: #FAFAFA;
+    padding-top: 0.01rem;
+    overflow: hidden;
+    position: relative; }
+    .content .con-main .con-top-logo {
+      width: 2rem;
+      height: 0.53rem;
+      background: url("/Static/Imgs/lx/jibenlo.png") no-repeat;
+      background-size: cover;
+      margin: 0 auto;
+      margin-top: 0.38rem;
+      margin-bottom: 0.16rem; }
+    .content .con-main .con-main-inp {
+      margin: 0 auto;
+      width: 3.3rem;
+      height: 0.6rem;
+      border-bottom: 1px solid #999;
+      margin-top: 0.13rem; }
+      .content .con-main .con-main-inp .tou111 {
+        width: 25%;
+        height: 0.60rem;
+        float: left;
+        color: #2297F1;
+        font-size: 0.4rem;
+        line-height: 0.6rem;
+        text-align: center; }
+      .content .con-main .con-main-inp input {
+        width: 75%;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        float: left;
+        border: none;
+        outline: medium;
+        background: #FAFAFA;
+        color: #999999;
+        font-size: 0.25rem; }
+    .content .con-main .con-main-bot .bot-son1 {
+      position: absolute;
+      width: 2rem;
+      height: 0.38rem;
+      bottom: -0.19rem;
+      left: -0.27rem;
+      background: #0093E7;
+      border-radius: 0.1rem;
+      z-index: 3; }
+    .content .con-main .con-main-bot .bot-son2 {
+      position: absolute;
+      width: 2rem;
+      height: 0.38rem;
+      bottom: -0.23rem;
+      left: 1.1rem;
+      background: #38BFE1;
+      border-radius: 0.1rem;
+      z-index: 2; }
+    .content .con-main .con-main-bot .bot-son3 {
+      position: absolute;
+      width: 100%;
+      height: 0.38rem;
+      bottom: -0.3rem;
+      left: 1.1rem;
+      background: #08F0D7;
+      border-radius: 0.1rem;
+      z-index: 1; }
+  .content .con-bottom {
+    width: 100%;
+    height: 0.48rem;
+    position: relative; }
+    .content .con-bottom .bot-xieyi {
+      float: left;
+      width: 2.57rem;
+      height: 100%; }
+    .content .con-bottom .bot-xieyi .checkboxFour {
+      width: 0.2rem;
+      height: 0.2rem;
+      background: #FAFAFA;
+      border-radius: 100%;
+      position: relative;
+      margin: 0.15rem;
+      float: left; }
+    .content .con-bottom .checkboxFour label {
+      display: block;
+      width: 0.2rem;
+      height: 0.2rem;
+      border-radius: 100px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background: #FAFAFA; }
+    .content .con-bottom .checkboxFour input[type=checkbox]:checked + label {
+      background: #83D843; }
+    .content .con-bottom .bot-xieyi span {
+      float: left;
+      text-align: center;
+      line-height: 0.48rem;
+      color: #fff;
+      font-size: 0.23rem; }
+    .content .con-bottom .bot-next {
+      width: 1.37rem;
+      height: 0.56rem;
+      background: #F02987;
+      float: right;
+      font-size: 0.18rem;
+      border-radius: 0.1rem;
+      line-height: 0.56rem;
+      text-align: center;
+      position: absolute;
+      bottom: -0.04rem;
+      right: 0.28rem;
+      color: #fff; }

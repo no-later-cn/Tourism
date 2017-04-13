@@ -1,9 +1,9 @@
 <?php
-namespace App\Controller;
+namespace App\controller;
 use App\model\usermodel;
 use Core\Framework;
 
-class loginController extends Framework {
+class logincontroller extends Framework {
     public  function index(){
       $this->display('login/index.html');
     }

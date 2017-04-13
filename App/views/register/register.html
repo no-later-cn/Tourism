@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" contene="width=device-width">
+    <title>注册首页</title>
+    <link rel="stylesheet" href="/Static/Css/lx/register.css">
+    <link rel="stylesheet" href="../../../Static/Css/lx/register.scss">
+</head>
+<body>
+    <!--头部返回按钮-->
+    <div class="head">
+        <div class="nav">
+            <div class="back"><a href="/index.php/login" class=""><span class="icon-return"></span></a></div>
+            <div class="person"><a href="/index.php/personal" class=""><span class="icon-register"></span></a></div>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="content">
+        <div class="con-top">
+           
+        </div>
+        <div class="con-main">
+            <div class="con-top-logo">
+            </div>
+            <div class="con-main-inp">
+                <div class="tou111 icon-login"></div>
+                <!--<input type="text" value="填写昵称">-->
+                <input type="text" id="nickname" name="nickname" placeholder="填写昵称" onfocus="if(placeholder=='填写昵称') {placeholder=''}" onblur="if (value=='') {placeholder='填写昵称'}">
+            </div>
+            <div class="con-main-inp">
+                 <div class="tou111 icon-mobile"></div>
+                <!--<input type="text" value="填写手机号或邮箱">-->
+               <input type="text" id="tel" name="tel" placeholder="填写手机号或邮箱" onfocus="if(placeholder=='填写手机号或邮箱') {placeholder=''}" onblur="if (value=='') {placeholder='填写手机号或邮箱'}">
+            </div>
+            <div class="con-main-inp">
+                 <div class="tou111 icon-password" style="color:#F5663B"></div>
+                <!--<input type="text" value="输入6位密码">-->
+                <input type="password" id="password" name="password" placeholder="输入6位密码" onfocus="if(placeholder=='输入6位密码') {placeholder=''}" onblur="if (value=='') {placeholder='输入6位密码'}">
+            </div>
+            <div class="con-main-inp">
+                 <div class="tou111 icon-password" style="color:#F5663B"></div>
+                <!--<input type="text" value="再次确认密码">-->
+                <input type="password" id="countersignpw" name="countersignpw" placeholder="再次确认密码" onfocus="if(placeholder=='再次确认密码') {placeholder=''}" onblur="if (value=='') {placeholder='再次确认密码'}">
+            </div>
+            <div class="con-main-bot">
+                <div class="bot-son1 bot-son"></div>
+                <div class="bot-son2 bot-son"></div>
+                <div class="bot-son3 bot-son"></div>
+            </div>
+        </div>
+        <!--底部跳转-->
+        <div class="con-bottom">
+            <div class="bot-xieyi">  
+                <div class="checkboxFour">
+                    <input type="checkbox" value="1" id="checked" name="" style="visibility: hidden">
+                    <label for="checked"></label>
+                </div>
+                <span>我同意用户协议</span>
+            </div>  
+            <div class="bot-next">
+                NEXT
+            </div>
+        </div>
+    </div>
+</body>
+</html>

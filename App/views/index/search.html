@@ -1,140 +1,129 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	   <?php include VIEW.'template/meat.html' ?>
-	<meta charset="UTF-8">
-	<title>search</title>
-	<link rel="stylesheet" href="/Static/Css/base.css">
-	<link rel="stylesheet" href="/Static/Css/indexcss/searchone.css">
+<?php include VIEW.'template/meat.html' ?>
+<title>搜索</title>
+<link rel="stylesheet" href="/Static/Css/indexcss/searchone.css">
 </head>
+
 <body>
-	<header>
-		<div class="inner">
-	        <div class="return icon-return"></div>
-	        <div class="text">
-	            <h2>搜索</h2>
-	            <span>Search</span>
-	        </div>
-    	</div>	
+    <header>
+        <div class="inner">
+            <div class="return icon-return"></div>
+            <div class="text">
+                <h2>搜索</h2>
+                <span>Search</span>
+            </div>
+        </div>
     </header>
     <nav>
-	    <div class="inner">  
-	    	<div class="search1">
-	    	
-				<div class="icon-search1"></div>
-	        	<input type="text" placeholder="目的地/景点/攻略">
-	        	<div class="icon-voice"></div>
-	        </div>
-		</div>
-	</nav>
-	<div class="place">
-		<div class="inner">
-			<div class="city">
-				<div class="icon-location"></div>	
-				<input type="text" placeholder="定位当前城市">
-			</div>		
-		</div>
-	</div>
-	<div class="contion">
-		<div class="inner">
-			<div class="history">
-				<h3>历史记录</h3>
-				<span>History record</span>
-			</div>
-		</div>
-	</div>
-	<div class="chengshi">
-		<div class="inner">
-			<ul class="city-list">
-				<li class="hk">香港</li>
-				<li class="hainan">海南</li>
-				<li class="chengdu">成都</li>	
-			</ul>
-		</div>
-	</div>
-	<div class="contion1">
-		<div class="inner">
-			<div class="history">
-				<h3>热门城市</h3>
-				<span>Popular tourist city</span>
-			</div>
-		</div>
-	</div>
-	<div class="chengshi1">
-		<div class="inner">
-			<ul class="city-list">
-				<li class="hk">三亚</li>
-				<li class="hainan">上海</li>
-				<li class="chengdu">北京</li>	
-			</ul>
-		</div>
-	</div>
-	<div class="chengshi2">
-		<div class="inner">
-			<ul class="city-list">
-				<li class="hk">云南</li>
-				<li class="hainan">杭州</li>	
-			</ul>
-		</div>
-	</div>
-	<div class="contion2">
-		<div class="inner">
-			<div class="history">
-				<h3>相关推荐</h3>
-				<span>Related recommend</span>
-			</div>
-		</div>
-	</div>
-	<div class="groom">
-		<div class="inner">
-			<div class="present1">
-				
-				<div class="present-lf1">
-					<img src="/Static/Imgs/indeximgs/city.png" alt="">
-					<div class="hqc">
-						<span class="icon-location"></span>
-						<span class="juli">
+        <div class="inner">
+            <div class="search1">
+                <div class="icon-search1"></div>
+                <input type="text" placeholder="目的地/景点/攻略">
+                <div class="icon-voice"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="place">
+        <div class="inner">
+            <div class="city">
+                <div class="icon-location"></div>
+                <input type="text" placeholder="定位当前城市">
+            </div>
+        </div>
+    </div>
+    <div class="contion">
+        <div class="inner">
+            <div class="history">
+                <h3>历史记录</h3>
+                <span>History record</span>
+            </div>
+        </div>
+    </div>
+    <div class="chengshi">
+        <div class="inner">
+            <ul class="city-list">
+                <li class="hk">香港</li>
+                <li class="hainan">海南</li>
+                <li class="chengdu">成都</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contion1">
+        <div class="inner">
+            <div class="history">
+                <h3>热门城市</h3>
+                <span>Popular tourist city</span>
+            </div>
+        </div>
+    </div>
+    <div class="chengshi1">
+        <div class="inner">
+            <ul class="city-list">
+                <li class="hk">三亚</li>
+                <li class="hainan">上海</li>
+                <li class="chengdu">北京</li>
+            </ul>
+        </div>
+    </div>
+    <div class="chengshi2">
+        <div class="inner">
+            <ul class="city-list">
+                <li class="hk">云南</li>
+                <li class="hainan">杭州</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contion2">
+        <div class="inner">
+            <div class="history">
+                <h3>相关推荐</h3>
+                <span>Related recommend</span>
+            </div>
+        </div>
+    </div>
+    <div class="groom">
+        <div class="inner">
+            <div class="present1">
+                <div class="present-lf1">
+                    <img src="/Static/Imgs/indeximgs/city.png" alt="">
+                    <div class="hqc">
+                        <span class="icon-location"></span>
+                        <span class="juli">
 							<p>754km</p>
 							<p>华侨城</p>
 						</span>
-					</div>
-				</div>
-				<div class="present-rg">
-					<h3>深圳东部华侨城</h3>
-					<h5>Eastern overseas town </h5>
-					<p>东部华侨城是国内首个集体休闲度假、观光旅游户外运动等主体于一体的大型综合性国家生态旅游示范区。</p>	
-				</div>
-				<div class="burst"></div>
-			</div>
-
-		</div>
-		
-	</div>
-	<div class="groomm">
-		<div class="inner">
-			<div class="present1">
-				
-				<div class="present-lf1">
-					<img src="/Static/Imgs/indeximgs/city.png" alt="">
-					<div class="hqc">
-						<span class="icon-location"></span>
-						<span class="juli">
+                    </div>
+                </div>
+                <div class="present-rg">
+                    <h3>深圳东部华侨城</h3>
+                    <h5>Eastern overseas town </h5>
+                    <p>东部华侨城是国内首个集体休闲度假、观光旅游户外运动等主体于一体的大型综合性国家生态旅游示范区。</p>
+                </div>
+                <div class="burst"></div>
+            </div>
+        </div>
+    </div>
+    <div class="groomm">
+        <div class="inner">
+            <div class="present1">
+                <div class="present-lf1">
+                    <img src="/Static/Imgs/indeximgs/city.png" alt="">
+                    <div class="hqc">
+                        <span class="icon-location"></span>
+                        <span class="juli">
 							<p>754km</p>
 							<p>华侨城</p>
 						</span>
-					</div>
-				</div>
-				<div class="present-rg">
-					<h3>深圳东部华侨城</h3>
-					<h5>Eastern overseas town </h5>
-					<p>东部华侨城是国内首个集体休闲度假、观光旅游户外运动等主体于一体的大型综合性国家生态旅游示范区。</p>	
-				</div>
-				<div class="burst"></div>
-			</div>
-
-		</div>
-		
-	</div>
+                    </div>
+                </div>
+                <div class="present-rg">
+                    <h3>深圳东部华侨城</h3>
+                    <h5>Eastern overseas town </h5>
+                    <p>东部华侨城是国内首个集体休闲度假、观光旅游户外运动等主体于一体的大型综合性国家生态旅游示范区。</p>
+                </div>
+                <div class="burst"></div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

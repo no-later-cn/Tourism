@@ -28,9 +28,14 @@
     .xj-header .xj-head li:nth-child(2) {
       color: #fff;
       font-size: 0.26rem; }
+      .xj-header .xj-head li:nth-child(2) p:nth-child(1){
+        line-height: .3rem;
+      }
       .xj-header .xj-head li:nth-child(2) p:nth-child(2) {
         font-family:   "San Francisco", "Roboto", sans-serif;
-        font-size: 0.17rem; }
+        font-size: 0.17rem; 
+        line-height: .3rem;
+        }
     .xj-header .xj-head li:nth-child(3) a {
       display: block;
       width: 0.45rem;

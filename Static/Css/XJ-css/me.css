@@ -229,7 +229,8 @@ body, html {
   .con li:nth-child(2) {
     margin-top: 0.1rem;
     color: #fff;
-    font-size: 0.18rem; }
+    font-size: 0.18rem; 
+    line-height: .3rem;}
 
 .sandian {
   width: 3.47rem;

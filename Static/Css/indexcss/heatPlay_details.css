@@ -25,6 +25,10 @@ section.picture-show {
   margin-top: 1rem;
   overflow:hidden;
   overflow-x: scroll; }
+section.picture-show::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
   section.picture-show ul {
     height: 3.8rem;
     width: 14.3rem;

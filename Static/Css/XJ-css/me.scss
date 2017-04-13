@@ -2,7 +2,7 @@
 
  body{
      box-sizing: border-box;
-     
+     background: black;
  }
  body,html{
      width: 100%;
@@ -10,7 +10,7 @@
  }
 .bigbox{
     box-sizing: border-box;
-     @include rect(100%,120%);
+     @include rect(100%,130%);
   background:url(/Static/Imgs/XJ-img/backgroundimg.png) ;
   background-size: cover;
   
@@ -18,7 +18,7 @@
 
 .XJ-box{
     box-sizing: border-box;
-     @include rect(100%,120%);
+     @include rect(100%,130%);
     background:rgba(0,0,0,0.6);
     position: absolute;
     top:0;
@@ -71,6 +71,7 @@
         font-size: 0.3rem;
     }
     li:nth-child(2){
+        line-height: 0.4rem;
         font-size: 0.26rem;
     }
 }
@@ -125,7 +126,7 @@
         right: 0;
         
         width: 1px;
-        height: 100vh;
+        height: 110vh;
         background: #38d3e1;
         margin:auto;
     }
@@ -294,7 +295,6 @@
 .conbox{
      width: 3.11rem;
     height: 1.95rem;
-   
     margin: 0 auto;
     background: url("/Static/Imgs/XJ-img/my_03.png");
     background-size: cover;
@@ -315,6 +315,29 @@
         margin-top: 0.1rem;
         color: #666666;
         font-size: 0.18rem;
+    }
+    .more a{
+        width: 0.98rem;
+        height: 0.35rem;
+        background: #fe8800;
+        border-radius: 0.36rem;
+         display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+            bottom: -0.8rem;
+            right: 0.6rem;
+        p:nth-child(2){
+            font-size: 0.22rem;
+            color: #fff;
+        }
+        .xdian{
+            width: 4px;
+            height: 4px;
+            background: #f1da18;
+            border-radius: 50%;
+            
+        }
     }
 }
 .fourdian{
@@ -392,11 +415,33 @@
         color: #666666;
         font-size: 0.18rem;
     }
+        .more a{
+        width: 0.98rem;
+        height: 0.35rem;
+        background: #2296f0;
+        border-radius: 0.36rem;
+         display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+            bottom: -0.8rem;
+            right: 0.6rem;
+        p:nth-child(2){
+            font-size: 0.22rem;
+            color: #fff;
+        }
+        .xdian{
+            width: 4px;
+            height: 4px;
+            background: #38d3e1;
+            border-radius: 50%;
+            
+        }
+    }
 }
 .fivedian{
     width: 3.47rem;
     height: 1.55rem;
-   
     position: absolute;
     top: 12.7rem;
     right: 0.25rem;
@@ -415,13 +460,24 @@
         }
     }
 }
-.time{
-    width: 3.11rem;
+.fitimes{
+     width: 3.11rem;
+    height: 0.42rem;
+    background: #f02987;
+    margin: 0 auto;
+     border-radius: 0px 0.2rem 0.2rem 0.2rem;
+}
+.fitime{
+     width: 2.6rem;
+    height: 100%;
+    
     margin: 0 auto;
     display: flex;
   justify-content: space-between;
+  align-items: center;
+ 
     li:nth-child(1){
-        color: #30aebb;
+        color: #fff;
         font-size: 0.18rem;
     }
     li:nth-child(2){
@@ -433,17 +489,52 @@
         font-size: 0.24rem;
     }
 }
-.con{
+.ficonbox{
     width: 3.11rem;
+    height: 1.95rem;
+   
     margin: 0 auto;
-    li:nth-child(1){
-        color: #fff;
+    background: url("/Static/Imgs/XJ-img/my_11.png");
+    background-size: cover;
+     box-sizing: border-box;
+}
+.ficon{
+    width: 2.37rem;
+    height: 0.96rem;
+    margin: 0 auto;
+    padding: 0.2rem;
+   li:nth-child(1){
+        color: #333333;
         font-size: 0.28rem;
         margin-top: 0.1rem;
     }
     li:nth-child(2){
         margin-top: 0.1rem;
-        color: #fff;
+        color: #666666;
         font-size: 0.18rem;
+    }
+        .more a{
+         display: block;
+        width: 0.98rem;
+        height: 0.35rem;
+        background: #ff1ac6;
+        border-radius: 0.36rem;
+         display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+            bottom: -0.8rem;
+            right: 0.6rem;
+        p:nth-child(2){
+            font-size: 0.22rem;
+            color: #fff;
+        }
+        .xdian{
+            width: 4px;
+            height: 4px;
+            background: #f02987;
+            border-radius: 50%;
+            
+        }
     }
 }

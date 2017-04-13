@@ -93,7 +93,7 @@ header {
         font-size: .32rem; }
   .cart-info .user {
     padding-top: .1rem;
-    font-size: .3rem; }
+    font-size: .26rem; }
     .cart-info .user img {
       width: .6rem;
       vertical-align: middle; }
@@ -177,7 +177,9 @@ main.text {
   justify-content: space-around; }
   main.text .title h3 {
     font-size: .3rem;
-    font-weight: 600; }
+    font-weight: 600; 
+    line-height: .5rem;
+  }
   main.text .title span {
     color: #4E4E4E;
     font-size: .22rem;

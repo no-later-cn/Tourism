@@ -62,10 +62,21 @@ body {
 .banner {
   margin-top: 0.88rem;
   width: 100%;
-  position: relative; }
+  height: 3rem;
+  position: relative;
+  overflow: hidden;
+}
 
 .banner img {
-  width: 100%; }
+  position: absolute;
+  /*left: 0;*/
+  top: 0;
+  width: 100%;
+  height: 3rem;
+}
+.ban_tu:first-of-type{
+    z-index: 1;
+}
 
 .banner .btn {
   width: 12%;
@@ -75,10 +86,10 @@ body {
   left: 45%;
   bottom: 0.25rem;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 999;
+}
 
-.btn .hot {
-  background: #2296F0; }
 
 .btn li {
   width: 21%;
@@ -265,7 +276,6 @@ body {
 section.picture-show {
   width: 100%;
   height: 3.6rem;
-  /*overflow-x: auto; */
   overflow:hidden;
   overflow-x: auto;
 }
@@ -296,7 +306,7 @@ section.picture-show li .zhezhao{
   height: 1rem;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -0.01rem;
   background: rgba(195,234,247,0.8);
 }
 section.picture-show li .zhezhao .kew:nth-of-type(1){
@@ -344,7 +354,7 @@ section.picture-show li .zhezhao .kew:nth-of-type(4){
   height: 1rem;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -0.01rem;
   background: rgba(147,147,151,0.8);
 }
 .zhezhao1 .kew:nth-of-type(1){
@@ -391,7 +401,7 @@ section.picture-show li .zhezhao .kew:nth-of-type(4){
   height: 1rem;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -0.01rem;
   background: rgba(59,58,86,0.8);
 }
 .zhezhao2 .kew:nth-of-type(1){

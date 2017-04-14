@@ -119,7 +119,15 @@ header {
   .opt .star {
     font-size: .28rem;
     color: #FDC928;
+
     line-height: 1.5em; }
+     .opt .star i{
+      width: .26rem;
+      height: .26rem;
+      background: url('/Static/Imgs/h-xing.png')no-repeat center;
+      background-size: 90%;
+      display: inline-block;
+     }
 
 footer {
   width: 100%;

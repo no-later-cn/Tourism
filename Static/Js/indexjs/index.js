@@ -2,7 +2,7 @@ $(function(){
     $("img.lazy").lazyload();
     $("img.lazy").lazyload({
     		effect : "fadeIn",
-    		threshold : 200
+    		threshold : 100
 	})
 
 	var mySwiper = new Swiper('.banner .swiper-container', {
@@ -23,20 +23,19 @@ $(function(){
 		loop : true,
 		autoplay: 3000,
 		spaceBetween:-130,
-        // freeMode: true,
+        // freeMode: true, 
         slidesPerView: 'auto',
         effect: 'coverflow',
         slidesPerView: 2.5,
 		centeredSlides: true,
+		lazyLoading : true,
 		coverflow: {
             rotate: 90,
             stretch: -300,
             depth: 70,
             modifier: 1,
             slideShadows : true
-        }
-       
-        
+        }   
     })   	
 })
 

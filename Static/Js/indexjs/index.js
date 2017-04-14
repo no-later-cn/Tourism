@@ -1,19 +1,46 @@
 $(function(){
-	var t =setInterval(move,2000);
-	var now =0;
-	var next=0;
-	var w = $(".ban_tu").width();
-	var z=2;
-	function move(){
-		next++
-		if (next==3) {
-			next=0;
-		}
-		if (next==-1) {
-			next=2;
-		}
-		$(".hot").eq(now).css({background:"#fff"}).end().eq(next).css({background:"#2296F0"})
-		$(".ban_tu").eq(next).css({left:w,zIndex:z++}).animate({left:0}).end().eq(now).animate({left:-w})
-		now = next;
-	}
+    $("img.lazy").lazyload();
+    $("img.lazy").lazyload({
+    		effect : "fadeIn",
+    		threshold : 200
+	})
+
+	var mySwiper = new Swiper('.banner .swiper-container', {
+	autoplay: 3000,
+	loop : true,
+	pagination : '.swiper-pagination',
+	paginationClickable :true,
+	}) 
+	var eiffelswiper = new Swiper('.eiffel .swiper-container',{
+		// preloadImages:false,
+		lazyLoading : true,
+		
+	})
+	var zurichswiper = new Swiper('.zurich .swiper-container',{
+		lazyLoading : true,
+	})
+	var picture = new Swiper('.picture-show .swiper-container',{
+		loop : true,
+		autoplay: 3000,
+		spaceBetween:-130,
+        // freeMode: true,
+        slidesPerView: 'auto',
+        effect: 'coverflow',
+        slidesPerView: 2.5,
+		centeredSlides: true,
+		coverflow: {
+            rotate: 90,
+            stretch: -300,
+            depth: 70,
+            modifier: 1,
+            slideShadows : true
+        }
+       
+        
+    })   	
 })
+
+
+    
+    
+

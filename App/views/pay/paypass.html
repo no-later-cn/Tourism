@@ -12,13 +12,15 @@
         </div>
         <div class="add"></div>
     </header>
-    <div class="back">
-        <ul class="back-list">
-            <li class="back-item"></li>
-            <li class="back-item active"></li>
-            <li class="back-item"></li>
+
+    <div class="back swiper-container">
+        <ul class="back-list swiper-wrapper">
+            <li class="back-item swiper-slide "></li>
+            <li class="back-item swiper-slide "></li>
+            <li class="back-item swiper-slide"></li>
         </ul>
     </div>
+
     <div class="back-input">
         <form id="password">
             <input readonly class="pass" type="password" maxlength="1" value="">
@@ -46,7 +48,17 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="/Static/Js/jquery.min.js"></script>
 <script type="text/javascript" src="/Static/Js/ladingPasswordConfirm.js"></script>
-
 </html>
+<script>
+    $(function () {
+        var myswiper = new Swiper('.swiper-container', {
+            slidesPerView: 1.4,
+            paginationClickable: true,
+            spaceBetween: 30,
+            autoplayStopOnLast:true,
+            parallax:true,
+            centeredSlides:true,
+        });
+    })
+</script>

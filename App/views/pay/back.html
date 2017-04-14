@@ -19,13 +19,15 @@
         </div>
         <div class="add"></div>
     </header>
-    <div class="back">
-        <ul class="back-list">
-            <li class="back-item"></li>
-            <li class="back-item active"></li>
-            <li class="back-item"></li>
+
+    <div class="back swiper-container">
+        <ul class="back-list swiper-wrapper">
+            <li class="back-item swiper-slide "></li>
+            <li class="back-item swiper-slide "></li>
+            <li class="back-item swiper-slide"></li>
         </ul>
     </div>
+
     <main>
         <ul class="main-list">
             <li class="main-item">
@@ -65,5 +67,16 @@
         <a href="/index.php/pay/paypass" class="back-click"></a>
     </div>
 </body>
-
+<script>
+    $(function () {
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1.4,
+            paginationClickable: true,
+            spaceBetween: 30,
+            autoplayStopOnLast:true,
+            parallax:true,
+            centeredSlides:true,
+        });
+    })
+</script>
 </html>

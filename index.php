@@ -14,5 +14,16 @@ require 'Core/DBPDO.php';
 require 'Core/common.php';
 
 \Core\Framework::start();
+//include VIEW.'splash/splash.html';
 //include VIEW.'pay/paypass.html';
 
+/*
+ * 签到
+ *
+ * uid
+ * day
+ * ctime
+ *
+ *
+ * select * trom qiandao where
+ * */

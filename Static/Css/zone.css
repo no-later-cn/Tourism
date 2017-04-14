@@ -1,32 +1,26 @@
 @charset "UTF-8";
 @import url(zone-heading.css);
 body {
-    height: 100%;
-    overflow: hidden;
-}
+  height: 100%;
+  overflow: hidden; }
 
 .main-item-left .main-item-info p {
-    color: #666666;
-}
+  color: #666666; }
 
 .main-item-left .main-item-info h3 {
-    color: #333333;
-}
+  color: #333333; }
 
 .row::after {
-    content: '';
-    display: block;
-    clear: both;
-}
+  content: '';
+  display: block;
+  clear: both; }
 
 main {
-    width: 100%;
-    height: 8.7rem;
-    display: flex;
-    justify-content: center;
-}
-
-main .main-con {
+  width: 100%;
+  height: 8.7rem;
+  display: flex;
+  justify-content: center; }
+  main .main-con {
     width: calc(100% - 0.28rem);
     height: 100%;
     background: white;
@@ -34,113 +28,80 @@ main .main-con {
     box-sizing: border-box;
     padding: 0.28rem 0;
     border-radius: 8px;
-    box-shadow: 0 0 8px #999;
-}
-
-main .main-list {
+    box-shadow: 0 0 8px #999; }
+  main .main-list {
     display: flex;
-    flex-flow: wrap column;
-}
+    flex-flow: wrap column; }
 
 .main-item {
-    width: 100%;
-    height: 0.94rem;
-    box-sizing: border-box;
-    border-bottom: 1px solid #d9d9d9;
-    padding: 0 0.18rem;
-}
-
-.main-item a {
+  width: 100%;
+  height: 0.94rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 0.18rem; }
+  .main-item a {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
+    align-items: center; }
 
 .main-item-left {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    color: #fff;
-    align-items: center;
-}
-
-.main-item-left .main-item-img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  color: #fff;
+  align-items: center; }
+  .main-item-left .main-item-img {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
     margin-right: 0.2rem;
     line-height: 1.7;
     text-align: center;
-    font-size: 0.30rem;
-}
-
-.main-item-left .main-item-info {
-    flex: 1;
-}
-
-.main-item-left .main-item-info h3 {
-    font-size: 0.24rem;
-    line-height: 1.5;
-}
-
-.main-item-left .main-item-info p {
-    font-size: 0.16rem;
-    font-variant: small-caps;
-    font-family: "San Francisco", "Roboto", sans-serif;
-}
-
-.main-item-left .friend {
-    background: #38d3e1;
-}
-
-.main-item-left .syslog {
-    background: #ffd61b;
-}
-
-.main-item-left .card {
-    background: #ff0e0e;
-}
-
-.main-item-left .coupon {
+    font-size: 0.30rem; }
+  .main-item-left .main-item-info {
+    flex: 1; }
+    .main-item-left .main-item-info h3 {
+      font-size: 0.24rem;
+      line-height: 1.5; }
+    .main-item-left .main-item-info p {
+      font-size: 0.16rem;
+      font-variant: small-caps;
+      font-family:   "San Francisco", "Roboto", sans-serif; }
+  .main-item-left .friend {
+    background: #38d3e1; }
+  .main-item-left .syslog {
+    background: #ffd61b; }
+  .main-item-left .card {
+    background: #ff0e0e; }
+  .main-item-left .coupon {
     background: #ff6908;
     font-size: 0.24rem;
-    line-height: 2.2;
-}
-
-.main-item-left .clock {
-    background: #f02987;
-}
+    line-height: 2.2; }
+  .main-item-left .clock {
+    background: #f02987; }
 
 .main-item-right {
-    width: 1.08rem;
-    height: 0.3rem;
-    display: flex;
-}
-
-.main-item-right .bubble {
+  width: 1.08rem;
+  height: 0.3rem;
+  display: flex; }
+  .main-item-right .bubble {
     width: 0.5rem;
     height: 100%;
-    padding: 0 0.07rem;
-}
-
-.main-item-right .bubble span {
-    line-height: .3rem;
-    width: 100%;
-    height: 100%;
-    display: block;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    background: #f02987;
-    font-size: 0.18rem;
-}
-
-.main-item-right .relate {
+    padding: 0 0.07rem; }
+    .main-item-right .bubble span {
+      width: 100%;
+      height: 100%;
+      display: block;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      background: #f02987;
+      font-size: 0.18rem; }
+  .main-item-right .relate {
     transform: rotate(180deg);
     width: 0.43rem;
     height: 100%;
     font-size: 0.19rem;
-    text-align: right;
-}
+    text-align: right; }

@@ -1,0 +1,7 @@
+DROP  TABLE IF EXISTS Signin;
+  CREATE TABLE signin(
+  id INT (12) PRIMARY KEY  AUTO_INCREMENT,
+  uid INT (12),
+  day INT (12)
+  )
+  DEFAULT CHARSET=utf8

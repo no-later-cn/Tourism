@@ -4,8 +4,8 @@ function c($var){
     if(is_bool($var)){
         var_dump($var);
     }else{
-        echo "<br>";
+        echo "<pre>";
         print_r($var);
-        echo "</br>";
+        echo "</pre>";
     }
 }

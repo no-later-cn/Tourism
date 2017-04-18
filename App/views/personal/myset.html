@@ -17,31 +17,42 @@
     </header>
     <main>
         <ul class="main-list">
-            <li class="main-item  circle">
-                <div class="main-con-left">头像</div>
-                <div class="main-con-right">
-                    <div class="main-con-img">
-                        <img src="/Static/Imgs/h-1.jpg" alt="">
+            <form action="/index.php/personal/set_updata" method="post" name="form1" id="form1"  enctype="multipart/form-data">
+                <label for="avatar"><li class="main-item  circle">
+                    <div class="main-con-left">头像</div>
+                    <div class="main-con-right">
+                        <div class="main-con-img">
+                            <img src="<?php echo $login['avatar']?>" alt="">
+                        </div>
+                        <div class="relate icon-return"></div>
                     </div>
-                    <div class="relate icon-return"></div>
-                </div>
-            </li>
-            <li class="main-item">
-                <div class="main-con-left">个人主页背景</div>
-                <div class="main-con-right">
-                    <div class="main-con-img">
-                        <img src="/Static/Imgs/h-1.jpg" alt="">
+                </li></label>
+                <input type="hidden" name="avatar" value="<?php echo $login['avatar']?>">
+                <input type="file" name="file" id="avatar" style="display:none" accept="image/*" onChange="UploadFile();">
+            </form>
+
+            <form action="/index.php/personal/set_updata1" method="post" name="form2" id="form2"  enctype="multipart/form-data">
+                <label for="background"><li class="main-item">
+                    <div class="main-con-left">个人主页背景</div>
+                    <div class="main-con-right">
+                        <div class="main-con-img">
+                            <img src="<?php echo $login['background']?>" alt="">
+                        </div>
+                        <div class="relate icon-return"></div>
                     </div>
-                    <div class="relate icon-return"></div>
-                </div>
-            </li>
-            <li class="main-item">
-                <div class="main-con-left">昵称</div>
-                <div class="main-con-right">
-                    <p>Lambert</p>
-                </div>
-            </li>
-            <li class="main-item">
+                </li></label>
+                <input type="hidden" name="avatar" value="<?php echo $login['background']?>">
+                <input type="file" name="file" id="background" style="display: none" accept="image/*" onChange="UploadFile();">
+            </form>
+
+            <li class="main-item" data-name="name">
+                    <div class="main-con-left">昵称</div>
+                    <div class="main-con-right">
+                        <p><?php echo $login['name']?></p>
+                    </div>
+                </li>
+            <li class="main-item" >
+                <!--data-name="sex_id"-->
                 <div class="main-con-left">性别</div>
                 <div class="main-con-right">
                     <p>男</p>
@@ -53,33 +64,65 @@
                     <div class="main-con-img " id="app">
                         <img src="/Static/Imgs/h-set.png" alt="">
                     </div>
-                    <div class="relate icon-return"></div>
+                    <!--<div class="relate icon-return"></div>-->
                 </div>
             </li>
         </ul>
-        <ul class="main-list">
-            <li class="main-item  circle">
+        <ul class="main-list" >
+            <li class="main-item  circle" data-name='birthday'>
                 <div class="main-con-left">生日</div>
                 <div class="main-con-right">
-                    <time>1990-01-01</time>
+                    <p><?php echo $login['birthday']?></p>
                 </div>
             </li>
-            <li class="main-item">
+            <li class="main-item" data-name='district'>
                 <div class="main-con-left">地区</div>
                 <div class="main-con-right">
-                    <p>山西 太原</p>
+                    <p><?php echo $login['district']?></p>
                 </div>
             </li>
         </ul>
         <ul class="main-list">
-            <li class="main-item  circle">
+            <li class="main-item  circle" data-name='info'>
                 <div class="main-con-left">个性签名</div>
                 <div class="main-con-right">
-                    <p>人生没有如果，只有结果，不辜负自己，好好努力</p>
+                    <p><?php echo $login['info']?></p>
                 </div>
             </li>
         </ul>
     </main>
 </body>
+<script language="JavaScript" type="text/JavaScript">
+    $(function () {
+        function UploadFile(){
+            if($('#avatar').val()!="")
+            {
+                document.getElementById("form1").submit();
+            }else
 
-</html>
+            if($('#background').val()!="")
+            {
+                document.getElementById("form2").submit();
+            }
+        }
+        var list = $('');
+        var flag = true;
+        $('.main-item').on('click','.main-con-right',function () {
+            $list=$(this).parent().attr('data-name');
+            if(flag){
+                flag = false;
+                $data=$(this).find('p').text();
+                $(this).find('p').remove();
+                $('<input>').val($data).appendTo($(this)).focus().blur(function () {
+                    $item =$(this).val();
+                    $('<p>').text($item).appendTo($(this).parent())
+                    $.get('/index.php/personal/set_name',{name: $list,val:$item});
+                    $(this).remove();
+                    flag=true;
+                });
+            }
+            return false;
+        })
+    })
+</script>
+

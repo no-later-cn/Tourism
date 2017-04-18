@@ -8,7 +8,7 @@ class DBPDO {
 	public $PDO;
 	public function __construct() {
 //        创建连接数据库的PDO实例
-		$dsn = 'mysql:host=localhost;dbname=Tourism;port=4050;charset=utf8';
+		$dsn = 'mysql:host=localhost;dbname=Tourism;port=3306;charset=utf8';
 		//连接
 		$options = array(
 			//默认是PDO::ERRMODE_SILENT, 0, (忽略错误模式)
@@ -99,7 +99,6 @@ class DBPDO {
         for($i = 1;$i<count($data)+1;$i++){
             $con->bindValue($i,array_values($data)[$i-1]);
         }
-        echo $sql;
         $con->bindValue($i,array_values($id)[0]);
         try{
              return $con->execute();

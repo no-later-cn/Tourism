@@ -1,13 +1,12 @@
-
 <!--头部信息-->
 <div class="banner" id="banner">
     <div class="background">
-        <img src="/Static/Imgs/h-background.jpg" alt="">
+        <img src="<?php echo $login['background']?>" alt="">
     </div>
     <div class="banner-con">
         <div class="avatar">
             <a href="/index.php/personal/myset">
-                <img src="/Static/Imgs/h-touxiang.png" alt="">
+                <img src="<?php echo $login['avatar']?>" alt="">
             </a>
             <div class="set-img icon-editor"></div>
         </div>
@@ -20,7 +19,7 @@
                 </ul>
             </a>
         </div>
-        <p class="name"><a href="/index.php/personal/myset">Lambert</a></p>
-        <p class="info"><a href="/index.php/personal/myset">人生没有如果，只有结果，不辜负自己，好好努力</a></p>
+        <p class="name"><a href="/index.php/personal/myset"><?php echo $login['name']?></a></p>
+        <p class="info"><a href="/index.php/personal/myset"><?php echo $login['info']?></a></p>
     </div>
 </div>

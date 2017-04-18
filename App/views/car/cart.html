@@ -1,23 +1,24 @@
-<?php include VIEW.'template/meat.html'?>
+<?php include VIEW . 'template/meat.html'?>
 <title>租车服务</title>
-<link rel="stylesheet" href="<?php echo CSS_PATH?>cart.css">
+<link rel="stylesheet" href="<?php echo CSS_PATH ?>cart.css">
 </head>
 
 <body>
-    <?php include VIEW.'template/header.html'?>
+    <?php include VIEW . 'template/header.html'?>
     <div class="cartlist-wrap" style="margin-top: 1rem;">
         <ul class="cartlist">
+         <?php foreach ($data as $key => $value): ?>
             <li>
-                <a href="/index.php/car/detailed">
-                    <div class="cart"><img src="/Static/Imgs/cart/cart_l_1.png" alt=""></div>
+                <a href="/index.php/car/detailed?carid=<?php echo $value['id'] ?>">
+                    <div class="cart"><img src="<?php echo $value['d_map'] ?>" alt=""></div>
                     <div class="cart-info">
                         <div class="title">
-                            <h6>保时捷</h6>
-                            <span><i class="icon-location"></i>630m</span>
+                            <h6><?php echo $value['d_title'] ?></h6>
+                            <span><i class="icon-location"></i><?php echo $value['ran'] ?>m</span>
                         </div>
                         <div class="user">
-                            <img src="/Static/Imgs/cart/cart_u_1.png" alt="">
-                            <span class="num">晋A88888</span>
+                            <img src="<?php echo $value['company'] ?>" alt="">
+                            <span class="num"><?php echo $value['car_num'] ?></span>
                         </div>
                     </div>
                     <div class="opt">
@@ -33,35 +34,10 @@
                     </div>
                 </a>
             </li>
-            <li>
-                <a href="/index.php/car/detailed">
-                    <div class="cart"><img src="/Static/Imgs/cart/cart_l_1.png" alt=""></div>
-                    <div class="cart-info">
-                        <div class="title">
-                            <h6>保时捷</h6>
-                            <span><i class="icon-location"></i>630m</span>
-                        </div>
-                        <div class="user">
-                            <img src="/Static/Imgs/cart/cart_u_1.png" alt="">
-                            <span class="num">晋A88888</span>
-                        </div>
-                    </div>
-                    <div class="opt">
-                        <div class="tel">
-                            <i class="icon-mobile"></i>
-                        </div>
-                        <div class="star">
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                            <i></i>
-                        </div>
-                    </div>
-                </a>
-            </li>
+        <?php endforeach;?>
         </ul>
     </div>
-    <?php include VIEW.'template/footer.html'?>
+    <?php include VIEW . 'template/footer.html'?>
 </body>
 
 </html>

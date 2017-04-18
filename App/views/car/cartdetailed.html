@@ -4,23 +4,31 @@
 </head>
 
 <body>
+    <link rel="stylesheet" href="/Static/Css/indexcss/swiper.min.css">
     <?php include VIEW.'template/header.html'?>
     <!--banner -->
     <div class="banner-wrap" style="margin-top: .88rem;">
         <div class="banner">
-            <img src="/Static/Imgs/cart/cart-1.png" alt="">
+            <!--  <img src="/Static/Imgs/cart/cart-1.png" alt=""> -->
+            <div class="swiper-container swiper-container-horizontal" style="width: 100%;height: 100%;">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1500px, 0px, 0px);">
+                    <img src="<?php echo $data[0]['b_o']?>" class="swiper-slide">
+                    <img src="<?php echo $data[0]['b_t']?>" class="swiper-slide">
+                    <img src="<?php echo $data[0]['b_f']?>" class="swiper-slide">
+                </div>
+            </div>
         </div>
     </div>
     <!--信息内容-->
     <main class="text">
         <div class="title">
-            <h3>凯迪拉克 XTS</h3>
-            <span><b>Cadillac</b> XTS</span>
+            <h3><?php echo $data[0]['d_title']?></h3>
+            <span><?php echo $data[0]['e_title']?></span>
         </div>
-        <p>驾驶者凯迪拉克，在安稳的途中享受快乐，在劳累的时候，可 已在宽阔的家是空间里享受乐趣，也可休息，限定的时间里赶 紧订购吧，凯</p>
+        <p><?php echo $data[0]['d_decs']?></p>
         <div class="price">
             <span>RMB:</span>
-            <b>2039</b>
+            <b><?php echo $data[0]['price']?></b>
             <span>/日</span>
         </div>
     </main>
@@ -28,21 +36,23 @@
     <main class="select">
         <div class="time">
             <span>取车归还日期：</span>
-            <span>2017.02.07-2017.03.01</span>
+            <span id="time">
+                <i></i>
+            </span>
         </div>
         <div class="place">
             <span>取车地点：</span>
-            <span>运城</span>
+            <span><?php echo $data[0]['place']?></span>
         </div>
         <div class="date">
-            <span>出行日期：</span>
-            <p>5日</p>
+            <span>租用时长：</span>
+            <p><?php echo $data[0]['duration']?>日</p>
         </div>
         <div class="price">
             <span>支付金额：</span>
             <p>
                 <span>RMB：</span>
-                <b>2039</b>
+                <b><?php echo $data[0]['price']?></b>
             </p>
         </div>
     </main>
@@ -56,7 +66,7 @@
                 <p>Payment</p>
             </div>
         </a>
-        <a href="/index.php/pay/order" class="pay-settle">
+        <a href="/index.php/pay/order?payid=<?php echo $data[0]['id']?>" class="pay-settle">
             <i class="icon-shopping"></i>
             <div class="text">
                 <h6>去结算</h6>
@@ -65,5 +75,30 @@
         </a>
     </footer>
 </body>
+<script type="text/javascript">
+var swiper = new Swiper('.swiper-container', {
+    loop: true,
+});
+// 获取当前时间
+function show() {
+    var mydate = new Date();
+    var str = "" + mydate.getFullYear() + "年";
+    str += (mydate.getMonth() + 1) + "月";
+    str += mydate.getDate() + "日";
+    return str;
+}
+// 选择时间相关
+$('#time i').html(show());
+$('#time').on('click', "i", function() {
+    $(this).empty();
+    $('<input type="date" name="" id="date" style="z-index: 999;">').appendTo($('#time'));
+    $("#date").on('change', function() {
+        var arr = $(this).val().split('-');
+        var text = arr[0]+"年"+arr[1]+"月"+arr[2]+"日";
+        $(this).remove();
+        $('#time i').html(text);
+    })
+});
+</script>
 
 </html>

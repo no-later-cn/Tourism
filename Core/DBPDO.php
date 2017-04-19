@@ -8,7 +8,11 @@ class DBPDO {
 	public $PDO;
 	public function __construct() {
 //        创建连接数据库的PDO实例
+<<<<<<< HEAD
 		$dsn = 'mysql:host=localhost;dbname=Tourism;port=3306;charset=utf8';
+=======
+		$dsn = 'mysql:host=localhost;dbname=tourism;port=3306;charset=utf8';
+>>>>>>> ea236370abae57e3e4b515e308daa9a5ab86d792
 		//连接
 		$options = array(
 			//默认是PDO::ERRMODE_SILENT, 0, (忽略错误模式)

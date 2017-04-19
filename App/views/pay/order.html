@@ -3,8 +3,9 @@
 <title>订单详情</title>
 </head>
 
-<body>
+<body style="position: relative;">
     <!--订单的头部  和别的有差别！-->
+
     <header class="order">
         <div class="return icon-return" onclick=" window.history.back()" ;></div>
         <div class="text">
@@ -26,46 +27,12 @@
             <div class="goods-info">
                 <ul class="goods-content">
                     <li>
-                        <img src="/Static/Imgs/pay/o-1.png" alt="">
+                        <img src="<?php echo $data[0]["d_map"]?>" alt="" style="height: 100%;padding-top:.5rem;">
                         <div class="goods-text">
-                            <h3>凯迪拉克 XTS</h3>
-                            <p>规划日期：2017-02-06</p>
-                            <p>出行日期：5天</p>
-                            <p>取车地点：上海</p>
-                        </div>
-                        <div class="price-box">
-                            <div class="star">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </div>
-                            <div class="price">￥659</div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="/Static/Imgs/pay/o-1.png" alt="">
-                        <div class="goods-text">
-                            <h3>凯迪拉克 XTS</h3>
-                            <p>规划日期：2017-02-06</p>
-                            <p>出行日期：5天</p>
-                            <p>取车地点：上海</p>
-                        </div>
-                        <div class="price-box">
-                            <div class="star">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </div>
-                            <div class="price">￥659</div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="/Static/Imgs/pay/o-1.png" alt="">
-                        <div class="goods-text">
-                            <h3>凯迪拉克 XTS</h3>
-                            <p>规划日期：2017-02-06</p>
-                            <p>出行日期：5天</p>
-                            <p>取车地点：上海</p>
+                            <h3><?php echo $data[0]["d_title"]?></h3>
+                            <p><?php echo $data[0]["statr_time"]?></p>
+                            <p><?php echo $data[0]["duration"]?></p>
+                            <p><?php echo $data[0]["place"]?></p>
                         </div>
                         <div class="price-box">
                             <div class="star">

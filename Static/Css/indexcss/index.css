@@ -273,7 +273,12 @@ body {
   width: 4.5rem;
   height: 3rem;
   border-radius: 0.12rem;
+  overflow: hidden;
   position: relative;
+}
+.picture-show .picture img{
+  width: 4.5rem;
+  height: 3rem;
 }
 .picture-show .picture .zhezhao{
   width: 100%;
@@ -504,17 +509,6 @@ body {
   padding-right: 0.1rem;
   color: #90C8F2;
 }
-
-.picture-show .picture:nth-of-type(1) {
-  background: url("/Static/Imgs/indeximgs/rizhi2.png")center/cover no-repeat;
-}
-.picture-show .picture:nth-of-type(2) {
-  background: url("/Static/Imgs/indeximgs/rizhi1.png")center/cover no-repeat;
-  font-size: 100% 100%;
-}
-
-.picture-show .picture:nth-of-type(3) {
-  background: url("/Static/Imgs/indeximgs/rizhi.png")center/cover no-repeat; }
 
 .raiders {
   width: 100%;

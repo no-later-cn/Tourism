@@ -14,6 +14,11 @@ require 'Core/DBPDO.php';
 require 'Core/common.php';
 
 \Core\Framework::start();
+<<<<<<< HEAD
 //include VIEW.'personal/zone.html';
 //include VIEW.'splash/splash.html';
 //include VIEW.'pay/paypass.html';
+=======
+//include VIEW.'pay/paypass.html';
+
+>>>>>>> ea236370abae57e3e4b515e308daa9a5ab86d792
